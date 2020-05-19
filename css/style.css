@@ -347,13 +347,15 @@ p {
 }
 
 .logo {
+    height: 100px;
     float: left;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
     width: 70px;
     height: 85px;
-    margin: 10px 0 0 50px;
 }
 
 .navbar__rgba {
@@ -365,9 +367,8 @@ p {
 }
 
 .menu {
-    min-height: 80px;
+    min-height: 100px;
     float: right;
-    margin: 0px 80px 0 0px;
 }
 
 .menu sub {
@@ -384,7 +385,7 @@ p {
 .menu ul li {
     float: left;
     position: relative;
-    margin: 0px 25px;
+    margin-left: 50px;
 }
 
 .menu ul li:hover ul {
@@ -430,7 +431,7 @@ p {
 }
 
 .menu i {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 
@@ -933,7 +934,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .map {
@@ -1688,7 +1689,7 @@ span {
     min-height: 670px;
     font-size: 20px;
     position: relative;
-    z-index: 5;
+    z-index: 1;
     display: flex;
 }
 
@@ -1865,6 +1866,7 @@ h2.title {
     position: relative;
     height: auto;
     display: flex;
+    z-index: 1;
 }
 
 .review::after {
