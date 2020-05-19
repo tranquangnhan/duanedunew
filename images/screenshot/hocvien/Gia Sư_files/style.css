@@ -1,0 +1,1712 @@
+/* @font-face {
+    font-family: myFirstFont;
+    src: url(SVN-Androgyne.ttf);
+    font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500&family=Oswald:wght@700&display=swap'); */
+
+@font-face {
+    font-family: MyriadPro;
+    src: url('../font/MyriadPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Avo;
+    src: url('../font/SVN-Avo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AvoItalic;
+    src: url('../font/SVN-Avo italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Androgyne;
+    src: url('../font/UTM Androgyne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: Androgyne;
+}
+
+h2,
+h3 {
+    font-family: Androgyne;
+    font-size: 22pt;
+}
+
+h2 {
+    font-size: 30pt;
+    font-family: Androgyne;
+}
+
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+p {
+    font-size: 12pt;
+    line-height: 160%;
+    font-family: MyriadPro;
+}
+
+.pl-4 {
+    padding-left: 4rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.img2 img {
+    width: 100% !important;
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+
+.boxcenter {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.boxcontentbn {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+/* code slide */
+
+.slide {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.chuyen-slide {
+    width: 9999px;
+    transition: all 0.8s;
+}
+
+.chuyen-slide__boximg-item img {
+    width: 100%;
+    height: 855px;
+    object-fit: cover;
+}
+
+.chuyen-slide .chuyen-slide__boximg {
+    width: 1349px;
+    height: 855px;
+    object-fit: cover;
+    float: left;
+}
+
+.dieuhuong {
+    position: absolute;
+    top: 48%;
+    cursor: pointer;
+}
+
+.dieuhuong i {
+    position: absolute;
+    z-index: 100;
+    left: 50px;
+    color: white;
+}
+
+.dieuhuong i:last-child {
+    position: absolute;
+    left: 1275px;
+    z-index: 100;
+}
+
+
+/* =============box__welcome2=================== */
+
+.box__welcome2 {
+    width: 945px;
+    height: 430px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box__welcome2-img img {
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+.box__welcome2-img {
+    width: 100%;
+    height: 100%;
+}
+
+.box__welcome-left {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+}
+
+.box__welcome-right {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+    padding-right: 20px;
+}
+
+.box__welcome-heading h2 {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 25pt;
+    font-weight: 500;
+}
+
+.box__welcome2-p {
+    text-align: left;
+    width: 95%;
+}
+
+.box__welcome2-p p {
+    margin: 0;
+    padding: 0;
+}
+
+.welcome2 h1 {
+    font-size: 60pt;
+    font-family: Androgyne;
+    line-height: 70px;
+}
+
+.welcome2 span {
+    font-size: 38pt;
+}
+
+
+/* =============box__welcome2=================== */
+
+
+/* end code slide */
+
+.hieuung {
+    animation-name: anims;
+    animation-duration: 2s;
+    z-index: 2;
+}
+
+@keyframes anims {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes anims {
+    from {
+        opacity: 0;
+        transition: all 1s;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* start slideshow */
+
+.left {
+    position: absolute;
+    left: 30px;
+    top: 45%;
+    z-index: 3;
+    color: white;
+    cursor: pointer;
+}
+
+.right {
+    position: absolute;
+    right: 30px;
+    top: 45%;
+    z-index: 3;
+    color: white;
+    cursor: pointer;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 100px;
+    min-height: 100px;
+    margin: 20px 0 0 50px;
+}
+
+.navbar__rgba {
+    display: none;
+}
+
+.navbar__icon {
+    display: none;
+}
+
+.menu {
+    min-height: 80px;
+    float: right;
+    margin: 20px 50px 0 0px;
+}
+
+.menu sub {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.menu ul li {
+    float: left;
+    position: relative;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.menu ul li ul {
+    margin-top: 5px;
+    position: absolute;
+    background-color: #151515;
+    padding: 0;
+    height: 75px;
+    padding: 10px 0;
+    display: none;
+    width: 120px;
+}
+
+.menu ul li ul li {
+    float: none;
+}
+
+.menu ul li ul li a {
+    line-height: 23px;
+}
+
+.navbar__mobile {
+    display: none;
+}
+
+.text-banner {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    padding-top: 65px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 24%;
+    z-index: 2;
+}
+
+.text-banner2 {
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    padding-top: 65px;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    z-index: 2;
+}
+
+.text-banner .welcome p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.chuyen-slide__boximg {
+    position: relative;
+}
+
+.cms {
+    font-family: myFirstFont;
+}
+
+.icons-banner {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.box1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 10pt;
+    float: left;
+    margin-left: 40px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.welcome {
+    clear: both;
+    padding-top: 25px;
+}
+
+.welcome .welcome__p-mobile {
+    display: none;
+}
+
+.welcome h1 {
+    font-size: 35pt;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.rgba {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content {
+    float: left;
+    background-image: url('../images/background2.png');
+    background-repeat: repeat-y;
+    min-height: 800px;
+    background-size: 1350px 700px;
+    position: relative;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.content .abu {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content img {
+    height: 300px;
+}
+
+.content__parent-about .content-parent {
+    position: relative;
+}
+
+.content-shadow {
+    position: absolute;
+    left: 1%;
+    top: 70%;
+    width: 87% !important;
+    margin-left: 19px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 8px #999;
+    height: 390px;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    color: white;
+    background-color: #89dfce;
+    text-align: center;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+.yl {
+    background-color: rgba(252, 235, 0, 0.4);
+}
+
+.content__parent-about .content-text h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content__parent-about .content-text p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.teacher {
+    min-height: 800px;
+    background-color: #13bf9e;
+}
+
+.student img,
+.teacher img {
+    padding-top: 80px;
+}
+
+.teacher h2 {
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.gach {
+    width: 70%;
+    margin: 5px 0 50px 2px;
+    border-bottom: 3px solid #ffe266;
+}
+
+.text-teacher {
+    padding-top: 20px;
+    width: 60%;
+    margin-left: 50px;
+    color: white;
+    line-height: 30px;
+}
+
+.text-teacher h2 {
+    line-height: 50px;
+}
+
+.cl-w a {
+    color: white !important;
+}
+
+.cl-b {
+    color: black !important;
+}
+
+.cl-b a {
+    color: black;
+}
+
+.icon-check i {
+    float: left;
+    width: 30px;
+    height: 80px;
+}
+
+.quyenloi-check {
+    margin-left: 40px;
+}
+
+.quyenloi-check div {
+    margin: 10px 0;
+}
+
+.check {
+    margin: 10px 0;
+}
+
+.btn-dk {
+    max-width: 230px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #ffe266;
+    text-align: center;
+    line-height: 60px;
+    margin: 40px 0;
+    font-size: 20pt;
+    transition: all 0.5s;
+    font-family: Androgyne;
+    color: black;
+}
+
+.btn-dk:hover {
+    background-color: #e74c3c;
+}
+
+.btn-dk:hover a {
+    color: white !important;
+}
+
+.btn-dk a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.student {
+    background-image: url('../images/background2.png');
+    background-repeat: repeat-x;
+    min-height: 600px;
+    background-size: 1350px 1000px;
+}
+
+.icon-blue {
+    width: 100px;
+    margin: 0 auto;
+    min-height: 220px;
+    color: white;
+    font-size: 17pt;
+    margin-top: 80px;
+}
+
+.icon-blue i {
+    font-size: 45pt;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.icon-blue #lop {
+    float: left;
+}
+
+.lop-hoc {
+    clear: both;
+}
+
+.icon-blue span {
+    float: left;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.btn-fag {
+    width: 220px;
+    height: 40px;
+    margin: 0 auto;
+    box-shadow: 3px 2px 5px #888;
+}
+
+.btn-giasu {
+    background-color: #ffe266;
+    border-radius: 3px 0 0 3px;
+}
+
+.btn-giasu,
+.btn-hocvien {
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    float: left;
+    margin: 0 auto;
+}
+
+.btn-hocvien {
+    background-color: white;
+    border-radius: 0 3px 3px 0px;
+}
+
+.faq__text-item i {
+    float: left;
+    margin-right: 20px;
+}
+
+.boxtext-faq {
+    width: 80%;
+    height: 130px;
+    border-radius: 10px;
+    margin-left: 80px;
+    background-color: #f2f2f2;
+}
+
+.boxtext-faq p {
+    width: 90%;
+    padding: 30px 20px 0 20px;
+    font-size: 11pt;
+}
+
+.uudai {
+    background-image: url('../images/giasu2.png');
+    text-align: center;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-size: 1350px 800px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.uudai .uudai-content p {
+    font-weight: bold;
+    font-size: 23pt;
+}
+
+.hand {
+    padding: 10px 0;
+    color: white;
+}
+
+.uudai h2 {
+    color: red;
+    padding-top: 40px;
+}
+
+.bg-g {
+    background-color: #13bf9e;
+    margin: 0 auto;
+}
+
+.bg-white {
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.text-faq i,
+p {
+    padding: 10px 0;
+}
+
+.uudai-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.map {
+    width: 50%;
+    float: left;
+    background-color: #f7f7f7;
+    min-height: 600px;
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    min-height: 600px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    padding-left: 50px;
+    background-color: #f7f7f7;
+    min-height: 600px;
+    width: 50%;
+    float: left;
+}
+
+.footer-logo {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.footer i {
+    float: left;
+    margin-right: 20px;
+}
+
+.text-footer {
+    width: 70%;
+}
+
+.foot-end {
+    background-color: #0b7a64;
+    min-height: 150px;
+    color: white;
+    text-align: center;
+}
+
+.col-4 {
+    width: 32%;
+    float: left;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.col-6 {
+    width: 49%;
+    float: left;
+}
+
+.mr {
+    margin-right: 2%;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.pb-3 {
+    padding-bottom: 3rem;
+}
+
+.pt-5 {
+    padding-top: 5rem;
+}
+
+.blue {
+    background-color: #13bf9e;
+    min-height: 300px;
+}
+
+.faq {
+    background-image: url('../images/background2.png');
+    background-repeat: repeat-x;
+    min-height: 600px;
+    background-size: 1350px 1000px;
+    min-height: 600px;
+}
+
+.go-to-top {
+    width: 100px;
+    min-height: 40px;
+    background-color: #999;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px #999;
+    cursor: pointer;
+    display: none;
+}
+
+.go-to-top:hover {
+    background-color: #333;
+    box-shadow: 1px 2px 3px #555;
+}
+
+
+/* respointsive */
+
+
+/* tablet  */
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .slide {
+        width: 100% !important;
+    }
+    .dieuhuong {
+        display: none;
+    }
+    .text-banner {
+        width: 70%;
+    }
+    .content__parent-about .content-shadow {
+        display: none;
+    }
+    .mt-0 {
+        margin-top: 0;
+    }
+    .mb-0 {
+        margin-bottom: 0;
+    }
+    /* teacher and student */
+    .teacher .text-teacher h2,
+    .student .text-teacher h2 {
+        width: 100%;
+        /* height: 300px; */
+        text-align: center;
+        font-size: 23pt;
+    }
+    .teacher,
+    .student {
+        min-height: 620px;
+        flex-direction: column;
+    }
+    .teacher .quyenloi,
+    .student .quyenloi {
+        display: none;
+    }
+    .teacher .teacher__img img,
+    .student .student__img img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding-top: 30px;
+    }
+    /* teacher and student */
+    /* Ưu đãi */
+    .uudai {
+        min-height: 470px;
+    }
+    .contact .footer {
+        height: 700px;
+        font-size: 13pt;
+    }
+    .contact .footer .google,
+    .contact .footer .face,
+    .contact .footer .linkedin {
+        display: none;
+    }
+    .contact .footer i {
+        margin: 5px 10px 0 0;
+    }
+    /* menu */
+    .menu {
+        display: none;
+    }
+    .navbar__icon {
+        display: block;
+    }
+    #navmb__off {
+        display: none;
+        float: right;
+        font-weight: bold;
+        margin: 0px 10px;
+        font-size: 16pt;
+    }
+    .navbar__icon {
+        float: left;
+        margin: 20px 25px;
+        z-index: 4;
+        position: fixed;
+        color: black;
+        cursor: pointer;
+    }
+    .navbar__icon i {
+        font-size: 40px;
+    }
+    .navbar__mobile {
+        display: block;
+        width: 57%;
+        background-color: white;
+        height: 1000px;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+    .navbar__mobile ul {
+        list-style: none;
+        padding-top: 10px;
+    }
+    .navbar__mobile ul li {
+        margin: 20px 0;
+    }
+    .navbar__mobile ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .navbar__rgba {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        display: none;
+        animation: rgba 1s ease;
+    }
+    @keyframes rgba {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* end menu */
+    .boxtext-faq {
+        height: 200px;
+    }
+    /* Phúc Bình tablet */
+    h2.title {
+        font-size: 25px;
+    }
+    
+
+    .step {
+        width: 100% !important;
+        text-align: center;
+        height: unset !important;
+    }
+
+    .huongdan {
+        text-align: center;
+    }
+
+    .huongdan_page2 .box {
+        margin-top: 50px;
+    } 
+
+    .line-box {
+        display: none;
+    }
+
+    .huongdan_img {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .huongdan_btn>div {
+        padding: 0 30px !important;
+    }
+
+    .huongdan .box {
+        width: 100% !important;
+        height: unset !important;
+    }
+
+    .huongdan .page .boxcenter {
+        flex-direction: column;
+    }
+
+    .review .boxcenter {
+        flex-direction: column;
+    }
+
+    .huongdan .page {
+        min-height: unset !important;
+    }
+    
+    .review .col-4 {
+        width: 100% !important;
+        display: none;
+    }
+
+    .review .col-4:first-child {
+        display: block;
+    }
+
+    #hocvienn .boxcenter {
+        flex-direction: column !important;
+    }
+
+    .page {
+        padding: 30px 0;
+    }
+
+    .anhmh {
+        width: 100px;
+        margin-top: 30px !important;
+    }
+}
+
+
+/* mobile */
+
+@media only screen and (max-width:739px) {
+    /* menu */
+    .menu {
+        display: none;
+    }
+    .navbar__icon {
+        display: block;
+    }
+    #navmb__off {
+        display: none;
+        float: right;
+        font-weight: bold;
+        margin: 0px 10px;
+        font-size: 16pt;
+    }
+    .navbar__icon {
+        float: left;
+        margin: 17px 20px;
+        z-index: 4;
+        position: fixed;
+        color: black;
+        cursor: pointer;
+    }
+    .navbar__icon i {
+        font-size: 32px;
+    }
+    .navbar__mobile {
+        display: block;
+        width: 57%;
+        background-color: white;
+        height: 1000px;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+    .navbar__mobile ul {
+        list-style: none;
+        padding-top: 10px;
+    }
+    .navbar__mobile ul li {
+        margin: 20px 0;
+    }
+    .navbar__mobile ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .navbar__rgba {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        display: none;
+        animation: rgba 1s ease;
+    }
+    @keyframes rgba {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* end menu */
+    .boxbanner {
+        min-height: 500px;
+    }
+    .slide {
+        width: 100%;
+    }
+    .chuyen-slide img {
+        object-fit: cover;
+    }
+    .dieuhuong {
+        display: none;
+    }
+    .text-banner .icons-banner {
+        display: none;
+    }
+    .text-banner .cms {
+        display: none;
+    }
+    .text-banner {
+        width: 100%;
+    }
+    .text-banner .welcome h1 {
+        width: 100%;
+    }
+    .text-banner .welcome p {
+        display: none;
+    }
+    .text-banner .welcome .welcome__p-mobile {
+        display: block;
+    }
+    .logo img {
+        width: 70px;
+        min-height: 50px;
+    }
+    .content .abu {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .col-4,
+    .col-6 {
+        width: 100%;
+    }
+    .content {
+        min-height: 250px;
+    }
+    .content .content__parent-about {
+        display: none;
+    }
+    .content__parent-about .content-shadow {
+        display: none;
+    }
+    .teacher,
+    .student {
+        min-height: 920px;
+        flex-direction: column;
+    }
+    .student {
+        padding-top: 0 !important;
+    }
+    .teacher .text-teacher,
+    .student .text-teacher {
+        width: 80%;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .teacher .text-teacher h2,
+    .student .text-teacher h2 {
+        width: 100%;
+        /* height: 300px; */
+        text-align: center;
+        font-size: 25pt;
+    }
+    .teacher .text-teacher .gach,
+    .student .text-teacher .gach {
+        margin: 0 auto;
+    }
+    .teacher .quyenloi,
+    .student .quyenloi {
+        display: none;
+    }
+    .teacher .teacher__img,
+    .student .student__img {
+        width: 100%;
+    }
+    .teacher .teacher__img img,
+    .student .student__img img {
+        width: 65%;
+        margin: 0 auto;
+        display: block;
+        padding-top: 30px;
+    }
+    .student .student__img img {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .teacher .btn-dk,
+    .student .btn-dk {
+        margin: 0 auto;
+    }
+    .student__content {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .class .col-4 {
+        width: 32%;
+    }
+    .faq__text-item {
+        margin: 0 auto;
+        width: 85%;
+    }
+    .faq__text-item p {
+        width: 100%;
+        font-size: 11pt;
+    }
+    .faq__text-item .boxtext-faq {
+        /* flex-direction: row; */
+        display: none;
+    }
+    .faq__text-item .fa-comments {
+        font-size: 18px !important;
+    }
+    .uudai .uudai-content h2 {
+        padding-top: 10px;
+    }
+    .uudai .uudai-content p {
+        font-size: 18pt;
+    }
+    /* footer */
+    .contact .footer {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+    .contact .footer-logo {
+        width: 30%;
+    }
+    .contact .footer .text-footer {
+        width: 90%;
+        text-align: center;
+    }
+    .contact .footer h3 {
+        text-align: center;
+    }
+    .contact .map {
+        width: 100%;
+    }
+    /* Phúc Bình Mobile*/
+    h2.title {
+        font-size: 25px;
+    }
+    .step {
+        width: 100% !important;
+        text-align: center;
+        height: unset !important;
+    }
+    .huongdan {
+        text-align: center;
+    }
+
+    .huongdan_page2 .box {
+        margin-top: 50px;
+    } 
+
+    .line-box {
+        display: none;
+    }
+    .huongdan_img {
+        width: 80%;
+        flex-direction: column;
+    }
+    .huongdan_btn>div {
+        padding: 0 30px !important;
+    }
+    .huongdan .box {
+        width: 100% !important;
+        height: unset !important;
+    }
+    .huongdan .page .boxcenter {
+        flex-direction: column;
+    }
+
+    .huongdan .page {
+        min-height: unset !important;
+    }
+
+    #hocvienn .boxcenter {
+        flex-direction: column !important;
+    }
+    .page {
+        padding: 30px 0;
+    }
+    .anhmh {
+        width: 100px;
+        margin-top: 30px !important;
+    }
+
+    /* Review Slide */
+    .review .boxcenter {
+        width: 90%;
+    }
+    .swiper-container {
+        width: 100vh;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        cursor: pointer;
+        text-align: center;
+        font-size: 18px;
+        height: max-content !important;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff !important;
+    }
+
+    .swiper-slide, .swiper-slide-active {
+        width: 100% !important; 
+    /* End slide */
+}
+}
+
+
+/* Phúc Bình */
+
+
+/* Hướng dẫn*/
+
+.huongdan {
+    background-image: url('../images/background2.png');
+    background-repeat: repeat;
+}
+
+span {
+    font-family: Androgyne;
+}
+
+.goc {
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-top: 30px solid #13bf9e;
+    position: absolute;
+    top: -1px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.huongdan .page {
+    min-height: 670px;
+    font-size: 20px;
+    position: relative;
+    z-index: 99;
+    display: flex;
+}
+
+.huongdan .page:nth-child(2n) {
+    background-color: #13bf9e;
+    color: #fff;
+}
+
+.huongdan .page:nth-child(2n) .goc {
+    border-top-color: #fff;
+}
+
+.huongdan .page .boxcenter {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    position: relative;
+}
+
+.huongdan_title {
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2.title {
+    margin: 0;
+    position: relative;
+    margin-bottom: 40px;
+    width: fit-content;
+}
+
+.title::after {
+    content: "";
+    width: 55%;
+    border-bottom: 4px solid #ffe266;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+
+#hocvien {
+    display: none;
+}
+
+.huongdan_btn {
+    width: max-content;
+    height: 60px;
+    border-radius: 35px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 3px 2px 5px #888;
+}
+
+.huongdan_btn>div {
+    padding: 0 60px;
+    line-height: 60px;
+    border: none;
+    margin: 0;
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.huongdan_btn>div.active {
+    background-color: #ffe266;
+    height: 60px;
+}
+
+.huongdan_page1 .box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.huongdan .box img {
+    width: 200px;
+}
+
+.huongdan p {
+    font-size: 20px;
+    font-family: Avo;
+    margin: 0;
+}
+
+.huongdan .step {
+    font-family: Androgyne;
+    float: left;
+    width: 80px;
+    height: 50px;
+}
+
+.huongdan_page1 .qrcode {
+    height: 125px;
+    width: 125px !important;
+    margin: 20px 0;
+}
+
+.huongdan_page1 .download img {
+    width: 180px;
+}
+
+.anhmh {
+    width: 250px !important;
+    margin: 0 auto;
+}
+
+.line-box {
+    width: 20px;
+    margin-top: 10%;
+}
+
+.huongdan_page2 .box {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.huongdan_page2 .boxcenter {
+    flex-direction: column;
+}
+
+.huongdan_page2 .huongdan_img {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.huongdan_page2 .huongdan_img:last-child {
+    align-items: flex-start;
+}
+
+.huongdan_page2 .step {
+    height: 100px;
+}
+
+.huongdan_page4 .boxcenter {
+    padding: 50px 0;
+    flex-direction: column;
+}
+
+.huongdan_page4 img {
+    width: 100%;
+}
+
+#hocvienn .boxcenter {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#hocvienn .boxcenter img {
+    flex-basis: 50%;
+}
+
+.review {
+    background-repeat: no-repeat;
+    background-image: url(../images/banner6.bmp);
+    position: relative;
+    min-height: 700px;
+    display: flex;
+}
+
+.review::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+    left: 0;
+    top: 0;
+}
+
+.review .title {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.review .boxcenter {
+    padding: 20px 0;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review_user_avatar {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.review_user_avatar img {
+    width: 100%;
+}
+
+.review .review_user_content {
+    background-color: #fff;
+    border-radius: 0 30px 0 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.review .review_user_content p {
+    font-size: 16px;
+    font-family: Avo;
+    font-weight: 500px;
+    padding: 0 30px;
+    text-align: justify;
+}
+
+.review .goc {
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    position: absolute;
+    top: -45px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.review_user_name {
+    font-size: 20px;
+    text-align: center;
+}
+
+.review_user_avatar {
+    width: 150px;
+    height: 150px;
+}
+
+.review .col-4 {
+    width: 30%;
+}
+
+.review .mr {
+    margin-right: 5%;
+}
+
+/* Review Slide */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    cursor: pointer;
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    height: max-content !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+}
+/* End slide */
+/* End of Hướng dẫn*/
+
+
+/* Chính sách */
+.chinhsach {
+    background-image: url(../images/background2.png);
+    float: left;
+    padding-bottom: 40px;
+}
+
+.chinhsach, .chinhsach p {
+    font-family: Avo;
+    font-size: large;
+}
+
+.chinhsach li {
+    margin: 20px 0;
+}
+
+.chinhsach .title {
+    margin: 60px auto;
+}
+
+
