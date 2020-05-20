@@ -104,7 +104,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             if (body.clientWidth < 740) {
                 // contentshawdown.style.height = "900px";
 
-                boxsd1[i].style.height = "100%";
+                boxsd1[i].style.minHeight = "100%";
 
             }
             //end điện thoại
