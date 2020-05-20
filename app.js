@@ -85,29 +85,40 @@ var body = document.querySelector("body");
 var btnxemthem1 = document.querySelectorAll(".btnxemthem1");
 var boxsd1 = document.querySelectorAll(".box-sd1");
 var contenttext1 = document.querySelectorAll(".cttext1");
+var content = document.querySelector(".content");
 for (let i = 0; i < btnxemthem1.length; i++) {
     btnxemthem1[i].addEventListener("click", slidedown1);
 
     function slidedown1() {
         if (
             boxsd1[i].clientHeight === 350 ||
-            contentshawdown.clientHeight === 420
+            boxsd1[i].clientHeight === 420
         ) {
-            boxsd1[i].style.height = "420px";
-            contenttext1[i].style.height = "100%";
+            // laptop
+            boxsd1[i].style.height = "490px";
+            contenttext1[i].style.minHeight = "100%";
+            content.style.minHeight = '1370px';
             btnxemthem1[i].innerHTML = "Thu nhỏ";
+            // laptop
+            //start điện thoại
             if (body.clientWidth < 740) {
-                boxsd1.style.height = "900px";
+                // contentshawdown.style.height = "900px";
+
+                boxsd1[i].style.height = "100%";
+
             }
-            //điện thoại
+            //end điện thoại
+            // start ipad
             if (body.clientWidth > 740 && body.clientWidth < 1024) {
                 boxsd1[i].style.height = "650px";
             }
-            //ipad
+            //end ipad
         } else {
+            // laptop
             boxsd1[i].style.height = "350px";
-            contenttext1[i].style.height = "230px";
+            contenttext1[i].style.minHeight = "230px";
             btnxemthem1[i].innerHTML = "Xem thêm";
+            content.style.minHeight = '1150px';
         }
     }
 }
@@ -115,9 +126,9 @@ for (let i = 0; i < btnxemthem1.length; i++) {
 //boxshadow 2
 
 var btnxemthem2 = document.querySelector("#xemthem2");
-var contentshawdown = document.querySelector("#boxxt");
-var contenttext = document.querySelector("#cttext");
-var content = document.querySelector(".content");
+var contentshawdown = document.querySelector("#boxxt2");
+var contenttext2 = document.querySelector("#cttext2");
+
 btnxemthem2.addEventListener("click", slidedown);
 
 function slidedown() {
@@ -127,22 +138,31 @@ function slidedown() {
     ) {
         contentshawdown.style.height = "700px";
         btnxemthem2.innerHTML = "Thu nhỏ";
+        contenttext2.style.height = "100%";
+        //start điện thoại
         if (body.clientWidth < 740) {
             contentshawdown.style.height = "900px";
+            //xét lại height của content nếu click
+            content.style.minHeight = "3325px";
         }
-        //điện thoại
+        // end điện thoại
+
+        //start ipad
         if (body.clientWidth > 740 && body.clientWidth < 1024) {
             contentshawdown.style.height = "1150px";
+            content.style.minHeight = "1860px";
         }
-        //ipad
-        contenttext.style.height = "100%";
+        //end ipad
+
         if (body.clientWidth >= 900) {
             content.style.minHeight = "1400px";
         }
+
     } else {
         contentshawdown.style.height = "350px";
-        contenttext.style.height = "230px";
+        contenttext2.style.height = "230px";
         btnxemthem2.innerHTML = "Xem thêm";
+        content.style.minHeight = "1150px"; //kiểm tra nếu là ấn vào thì giản content ra hoặc thu lại
     }
 }
 // box quyền lợi
@@ -213,12 +233,10 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    // for (i = 0; i < dots.length; i++) {
-    //     dots[i].className = dots[i].className.replace(" active", "");
-    // }
+
 
     slides[slideIndex].style.display = "block";
-    // dots[slideIndex].className += " active";
+
     //chuyển đến slide tiếp theo
     slideIndex++;
     //nếu đang ở slide cuối cùng thì chuyển về slide đầu
