@@ -779,8 +779,11 @@ p {
 }
 
 .student1 img {
-    width: 80% !important;
     float: right;
+}
+
+.student1 .text-teacher {
+    margin: 0;
 }
 
 .student2 {
@@ -1471,7 +1474,7 @@ p {
         margin-left: 12px;
     }
     .student {
-        min-height: 1250px;
+        min-height: 1000px;
         flex-direction: column;
     }
     .student {
@@ -1497,6 +1500,8 @@ p {
 
     .student .student__img {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .student .student__img img {
@@ -1507,7 +1512,7 @@ p {
     }
     .student .student__img img {
         margin-top: 30px;
-        width: 100%;
+        width: 50%;
     }
 
     .student .btn-dk {
