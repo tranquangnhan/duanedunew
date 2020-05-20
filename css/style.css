@@ -475,8 +475,8 @@ p {
     text-align: center;
     position: absolute;
     top: 20%;
-    left: 24%;
     z-index: 2;
+    transform: translateX(25%);
 }
 
 .text-banner-dacbiet {
@@ -662,13 +662,8 @@ p {
     margin: 0;
 }
 
-.teacher {
-    min-height: 800px;
-    background-color: #13bf9e;
-}
 
-.student img,
-.teacher img {
+.student img{
     padding-top: 80px;
 }
 
@@ -774,12 +769,31 @@ p {
     transition: all 0.5s;
 }
 
-.student {
+
+.student1 { 
+    background-color: #13bf9e;
+}
+
+.student1 .text-teacher {
+    color: #fff !important;
+}
+
+.student1 img {
+    width: 80% !important;
+    float: right;
+}
+
+.student2 {
     background-image: url("../images/background2.png");
     background-repeat: repeat-x;
-    min-height: 720px;
     background-size: 1350px 1000px;
 }
+
+.student {
+    min-height: 720px;
+    padding-bottom: 20px;
+}
+
 
 .icon-blue {
     width: 100px;
@@ -1130,19 +1144,16 @@ p {
         width: 49%;
     }
     /* teacher and student */
-    .teacher .text-teacher h2,
     .student .text-teacher h2 {
         width: 100%;
         /* height: 300px; */
         text-align: center;
         font-size: 23pt;
     }
-    .teacher,
     .student {
         min-height: 700px;
         flex-direction: column;
     }
-    .teacher .teacher__img img,
     .student .student__img img {
         width: 100%;
         margin: 0 auto;
@@ -1187,9 +1198,9 @@ p {
         z-index: 4;
         right: 0;
         position: fixed;
-        color: black;
+        color: white;
         cursor: pointer;
-        z-index: 6;
+        line-height: 80px;
     }
     .navbar__icon i {
         font-size: 40px;
@@ -1344,6 +1355,7 @@ p {
         height: 50%;
         padding-top: 0;
         z-index: 100;
+        transform: unset;
     }
     .text-banner .btn-dk {
         max-width: 163px;
@@ -1458,7 +1470,6 @@ p {
         display: block;
         margin-left: 12px;
     }
-    .teacher,
     .student {
         min-height: 1250px;
         flex-direction: column;
@@ -1466,32 +1477,28 @@ p {
     .student {
         padding-top: 0 !important;
     }
-    .teacher .text-teacher,
     .student .text-teacher {
         width: 100%;
         text-align: left;
         margin-left: 0;
     }
-    .teacher .text-teacher h2,
     .student .text-teacher h2 {
         width: 100%;
         /* height: 300px; */
         text-align: center;
         font-size: 25pt;
     }
-    .teacher .text-teacher .gach,
     .student .text-teacher .gach {
         margin: 0 auto;
     }
-    .teacher .quyenloi .quyenloi-check,
     .student .quyenloi .quyenloi-check {
         margin: 0;
     }
-    .teacher .teacher__img,
+
     .student .student__img {
         width: 100%;
     }
-    .teacher .teacher__img img,
+
     .student .student__img img {
         width: 90%;
         margin: 0 auto;
@@ -1502,7 +1509,7 @@ p {
         margin-top: 30px;
         width: 100%;
     }
-    .teacher .btn-dk,
+
     .student .btn-dk {
         margin: 50px auto;
     }
