@@ -477,6 +477,7 @@ p {
     top: 20%;
     z-index: 2;
     transform: translateX(25%);
+    left: 15%;
 }
 
 .text-banner-dacbiet {
@@ -778,6 +779,7 @@ p {
 
 .student1 img {
     float: right;
+    width: 80% !important;
 }
 
 .student1 .text-teacher {
@@ -1119,6 +1121,7 @@ p {
     .text-banner {
         width: 70%;
         margin-left: 0;
+        left: unset;
     }
     .content {
         min-height: 1150px;
@@ -1169,7 +1172,7 @@ p {
         width: 51%;
     }
     .contact .footer {
-        height: 700px;
+        min-height: 700px;
         font-size: 13pt;
     }
     .contact .footer .google,
@@ -1385,13 +1388,11 @@ p {
     }
     .navbar__icon {
         display: block;
-        float: right;
-        margin: 17px 20px;
-        z-index: 4;
-        right: 0;
+        right: 20px;
         position: fixed;
-        color: black;
+        color: #fff;
         cursor: pointer;
+        line-height: 100px;
         z-index: 6;
     }
     .navbar__icon i {
@@ -1679,6 +1680,16 @@ p {
     }
     .review {
         height: auto !important;
+    }
+
+    .slideshow-container {
+        margin-top: 100px;
+    }
+
+    .bg__banner {
+        margin: 0;
+        height: 100px;
+        background-color: #3a1b0a;
     }
 }
 
