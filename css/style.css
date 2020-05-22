@@ -397,6 +397,8 @@ p {
     float: left;
     position: relative;
     margin-left: 50px;
+    font-size: 14pt;
+    color: white;
 }
 
 .menu ul li:hover ul {
@@ -602,6 +604,10 @@ p {
     display: block;
 }
 
+.content__parent-about .content-parent__img img {
+    width: 100%;
+}
+
 .content-shadow {
     position: absolute;
     left: 1%;
@@ -657,8 +663,13 @@ p {
 
 .content__parent-about .content-text {
     position: relative;
-    height: 230px;
+    height: 223px;
     overflow: hidden;
+}
+
+.content-text .camket {
+    margin-top: 10px;
+    margin-bottom: 0 !important;
 }
 
 .content__parent-about .content-text h3 {
@@ -1318,6 +1329,8 @@ p {
     }
     .navbar__mobile ul li {
         margin: 30px 0;
+        color: black;
+        font-weight: bold;
     }
     .navbar__mobile ul li a {
         color: black;
@@ -1518,6 +1531,8 @@ p {
     }
     .navbar__mobile ul li {
         padding: 15px 15px;
+        color: black;
+        font-weight: bold;
     }
     .navbar__mobile ul li a {
         color: black;
