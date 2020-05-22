@@ -323,6 +323,7 @@ function hienxemthem() {
 //Gắn cái onLoad gì dùm nha Nhân ml
 //Slide PB desktop
 
+
 function desktopsl() {
     var bSlide = document.querySelector('#swiperslidefirst');
     var bSlide2 = document.querySelector('#swiperslidefirst2');
@@ -334,17 +335,16 @@ function desktopsl() {
             bSlide.style.marginLeft = '-103%';
             bSlide2.style.marginLeft = '-103%';
             i = 1;
-        }
-        else {
+        } else {
             bSlide.style.marginLeft = '0';
             bSlide2.style.marginLeft = '0';
             i = 0;
         }
-        
+
     }, 3000);
 }
 
-
+desktopsl();
 //Slide PB mobile
 function mobilesl() {
     var mslide = document.querySelector('#mobileslidefirst');
@@ -364,26 +364,27 @@ function mobilesl() {
                 mslide2.style.marginLeft = '-200%';
                 i++;
                 break;
-            case 3: 
+            case 3:
                 mslide.style.marginLeft = '-300%';
                 mslide2.style.marginLeft = '-300%';
                 i++;
-                break; 
-            case 4: 
+                break;
+            case 4:
                 mslide.style.marginLeft = '-400%';
                 mslide2.style.marginLeft = '-400%';
                 i++;
-                break; 
-            case 5: 
+                break;
+            case 5:
                 mslide.style.marginLeft = '-500%';
                 mslide2.style.marginLeft = '-500%';
                 i++;
-                break; 
-            case 6: 
+                break;
+            case 6:
                 mslide.style.marginLeft = '0';
                 mslide2.style.marginLeft = '0';
-                i=1;
-                break; 
+                i = 1;
+                break;
         }
     }, 2000);
 }
+mobilesl();

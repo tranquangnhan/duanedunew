@@ -33,6 +33,10 @@
     font-style: normal;
 }
 
+img {
+    max-width: 100%;
+}
+
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -589,7 +593,7 @@ p {
     font-weight: 500
 }
 
-.content img {
+.content .content-parent__img-item {
     height: 300px;
 }
 
@@ -617,15 +621,21 @@ p {
     background-color: rgba(252, 235, 0, 0.4);
 }
 
-.icon {
-    width: 65px;
-    height: 65px;
+.icon .icon__item1,
+.icon .icon__item2 {
+    height: 75px;
     border-radius: 65px;
-    color: white;
-    background-color: #89dfce;
+    /* background-color: #89dfce; */
     text-align: center;
-    line-height: 80px;
     margin: 0 auto;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.icon .icon__item3 {
+    height: 90px;
+    line-height: 0;
+    width: 100%;
 }
 
 .content__parent-about .xemthem {
@@ -693,7 +703,8 @@ p {
     font-family: AvoBold;
 }
 
-.student p, .student{
+.student p,
+.student {
     font-family: MyriadPro;
     font-size: 15px;
 }
@@ -860,6 +871,10 @@ p {
     float: left;
 }
 
+.icon-blue img {
+    height: 45px;
+}
+
 .faq h2 {
     text-align: center;
 }
@@ -928,7 +943,7 @@ p {
 .uudai {
     background-image: url("../images/giaovien-bg.png");
     text-align: center;
-    min-height: 400px;
+    min-height: 530px;
     background-attachment: fixed;
     background-size: 1350px 800px;
     background-repeat: no-repeat;
@@ -945,6 +960,26 @@ p {
 .uudai .uudai-content h3,
 .uudai .uudai-content p {
     color: white;
+}
+
+.uudai .uudai-content p {
+    width: 47%;
+    margin: 0 auto;
+}
+
+.uudai .uudai-content h2 {
+    margin-top: 4rem;
+}
+
+.uudai .uudai-content h3 {
+    font-weight: 500;
+    font-size: 28pt;
+    width: 47%;
+    margin: 0 auto;
+}
+
+.uudai .uudai-content h3 span {
+    font-size: 34pt;
 }
 
 .uudai .uudai-content p {
@@ -1063,9 +1098,10 @@ p {
     float: left;
 }
 
-.col-4 img {
+
+/* .col-4 img {
     width: 100%;
-}
+} */
 
 .col-6 {
     width: 49%;
@@ -1216,6 +1252,16 @@ p {
     }
     .uudai .uudai__boxbtn {
         width: 51%;
+    }
+    .uudai .uudai-content h3 {
+        padding-top: 10px;
+        font-size: 29pt;
+        width: 80%;
+    }
+    .uudai .uudai-content p {
+        font-size: 17pt;
+        margin-bottom: 20px;
+        width: 73%;
     }
     .contact .footer {
         min-height: 700px;
@@ -1590,11 +1636,12 @@ p {
         width: 32%;
     }
     /* start- icon blue */
-    .icon-blue i {
-        font-size: 30pt;
+    .icon-blue img {
         display: block;
         margin: 0 auto;
         margin-bottom: 6px;
+        width: 50%;
+        height: 45px;
     }
     /* end- icon blue */
     /* start-faq */
@@ -1615,7 +1662,7 @@ p {
     /* end-faq */
     /* box ưu đãi */
     .uudai {
-        min-height: 520px;
+        min-height: 582px;
     }
     .uudai .uudai__boxbtn {
         width: 54%;
@@ -1624,10 +1671,18 @@ p {
         margin: 10px auto;
     }
     .uudai .uudai-content h2 {
+        margin-top: 1rem;
+    }
+    .uudai .uudai-content h3 {
         padding-top: 10px;
+        font-size: 22pt;
+        margin-top: 2rem;
+        width: 80%;
     }
     .uudai .uudai-content p {
-        font-size: 18pt;
+        font-size: 15pt;
+        margin-bottom: 20px;
+        width: 73%;
     }
     /* box ưu đãi */
     /* footer */
