@@ -319,3 +319,72 @@ function hienxemthem() {
         menuxemthem.style.display = 'block';
     }
 }
+
+//Gắn cái onLoad gì dùm nha Nhân ml
+//Slide PB desktop
+
+
+function desktopsl() {
+    var bSlide = document.querySelector('#swiperslidefirst');
+    var bSlide2 = document.querySelector('#swiperslidefirst2');
+    bSlide.style.transition = '.4s';
+    bSlide2.style.transition = '0.4s';
+    var i = 0;
+    setInterval(() => {
+        if (i == 0) {
+            bSlide.style.marginLeft = '-103%';
+            bSlide2.style.marginLeft = '-103%';
+            i = 1;
+        } else {
+            bSlide.style.marginLeft = '0';
+            bSlide2.style.marginLeft = '0';
+            i = 0;
+        }
+
+    }, 3000);
+}
+
+desktopsl();
+//Slide PB mobile
+function mobilesl() {
+    var mslide = document.querySelector('#mobileslidefirst');
+    var mslide2 = document.querySelector('#mobileslidefirst2');
+    mslide.style.transition = '0.4s';
+    mslide2.style.transition = '0.4s';
+    var i = 1;
+    setInterval(() => {
+        switch (i) {
+            case 1:
+                mslide.style.marginLeft = '-100%';
+                mslide2.style.marginLeft = '-100%';
+                i++;
+                break;
+            case 2:
+                mslide.style.marginLeft = '-200%';
+                mslide2.style.marginLeft = '-200%';
+                i++;
+                break;
+            case 3:
+                mslide.style.marginLeft = '-300%';
+                mslide2.style.marginLeft = '-300%';
+                i++;
+                break;
+            case 4:
+                mslide.style.marginLeft = '-400%';
+                mslide2.style.marginLeft = '-400%';
+                i++;
+                break;
+            case 5:
+                mslide.style.marginLeft = '-500%';
+                mslide2.style.marginLeft = '-500%';
+                i++;
+                break;
+            case 6:
+                mslide.style.marginLeft = '0';
+                mslide2.style.marginLeft = '0';
+                i = 1;
+                break;
+        }
+    }, 2000);
+}
+mobilesl();
