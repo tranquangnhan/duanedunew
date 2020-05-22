@@ -421,6 +421,10 @@ p {
     background-color: #ffe267;
 }
 
+.menu ul li a:hover {
+    color: #ffe267;
+}
+
 .menu ul li ul li:hover a {
     color: black;
 }
@@ -572,6 +576,10 @@ p {
     width: 80%;
     margin: 0 auto;
     text-align: left;
+    font-family: Avo;
+    font-size: 12pt;
+    line-height: 120%;
+    font-weight: 500
 }
 
 .content img {
@@ -645,6 +653,8 @@ p {
     width: 80%;
     text-align: left;
     margin: 0 auto;
+    font-family: avo;
+    font-size: 12pt;
 }
 
 .content__parent-about .content-text ul {
@@ -653,6 +663,15 @@ p {
     margin: 0 auto;
     padding-top: 10px;
     margin-bottom: 20px;
+}
+
+.content__parent-about .content-text ul p {
+    width: 100%;
+}
+
+.content__parent-about .content-text ul li {
+    font-family: avo;
+    font-size: 12pt;
 }
 
 .content__parent-about .content-text ul p {

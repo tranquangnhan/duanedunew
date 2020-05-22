@@ -27,7 +27,7 @@
                 <li><a href="#aboutme">Về chúng tôi</a></li>
                 <li><a href="#xemthem2">Đăng Kí Dạy</a></li>
                 <li><a href="#searchteacher">Tìm Gia Sư</a></li>
-                <li><a id="clickxemthemmb" href="#">Xem Thêm <i class="fa fa-angle-down" style="font-size:16px"></i></a>
+                <li><a id="clickxemthemmb" href="">Xem Thêm <i class="fa fa-angle-down" style="font-size:16px"></i></a>
                     <ul class="navmb__xemthem">
                         <li><a href="https://www.facebook.com/digedu.vn/">Cộng đồng</a>
                             <li><a href="./chinh-sach/index.html">Chính sách sử dụng</a>
@@ -127,15 +127,14 @@
                     </div>
                     <div class="menu">
                         <ul>
-                            <li><a href="#home">Trang chủ</a></li>
+                            <li><a href="#home" class="actv">Trang chủ</a></li>
                             <li><a href="#aboutme">Về chúng tôi</a></li>
                             <li><a href="#xemthem2">Đăng kí dạy</a></li>
                             <li><a href="#searchteacher">Tìm gia sư</a></li>
                             <li><a href="">Xem thêm <i class="fa fa-angle-down" style="font-size:23px"></i></a>
                                 <ul>
-                                    <li><a href="">Cộng đồng</a>
-                                        <li>
-                                            <a href="./chinh-sach/index.html">Chính sách sử dụng</a>
+                                    <li><a href="https://www.facebook.com/digedu.vn/">Cộng đồng</a>
+                                        <li><a href="./chinh-sach/index.html">Chính sách sử dụng</a>
                                             <li><a href="#question">Câu hỏi thường gặp</a>
                                                 <li><a href="#training">Hướng dẫn sử dụng</a>
                                                     <li><a href="#contact">Liên hệ</a>
@@ -339,17 +338,17 @@
             </div>
         </div>
     </div>
-    <div class="row mb-0 ">
-        <div class="content ">
-            <div class="boxcenter2 mt-3 ">
-                <h2 id="about " class="title ">Về chúng tôi</h2>
-                <p class="abu ">Giáo dục luôn là vấn đề được quan tâm hàng đầu của các bậc phụ huynh và tất cả mọi người trong xã hội. <br><br> Trên thị trường có rất nhiều trung tâm môi giới gia sư có thể giúp bạn tìm kiếm những gia sư phù hợp với yêu cầu, tuy nhiên
+    <div class="row mb-0">
+        <div class="content">
+            <div class="boxcenter2 mt-3">
+                <h2 id="about" class="title">Về chúng tôi</h2>
+                <p class="abu">Giáo dục luôn là vấn đề được quan tâm hàng đầu của các bậc phụ huynh và tất cả mọi người trong xã hội. <br><br> Trên thị trường có rất nhiều trung tâm môi giới gia sư có thể giúp bạn tìm kiếm những gia sư phù hợp với yêu cầu, tuy nhiên
                     bạn không thể kiểm soát được chất lượng, bằng cấp của gia sư. <br><br> Bên cạnh đó, gia sư cũng gặp phải nhiều trung tâm lừa đảo, kém uy tín. <br><br> Chúng tôi sẽ là một lựa chọn tốt nhất để giải quyết vấn đề cho bạn, chúng tôi giúp
                     bạn đơn giản hóa mọi vấn đề, nhanh chóng, dễ dàng, giảm rủi ro và mang lại chất lượng giáo dục tốt nhất cho bạn.
                 </p>
-                <div class="row content__parent-about mt-3 ">
-                    <div class="col-4 mr content-parent ">
-                        <div class="content-parent__img ">
+                <div class="row content__parent-about mt-3">
+                    <div class="col-4 mr content-parent">
+                        <div class="content-parent__img">
                             <img src="images/content1.png " alt=" ">
                             <div class="content-shadow box-sd1 ">
                                 <div class="icon ">
@@ -542,35 +541,35 @@
                     </div>
                 </div>
                 <div class="col-4 class__item ">
-                    <div class="icon-blue ">
-                        <i class="fa fa-group "></i> 3295+
+                    <div class="icon-blue">
+                        <i class="fa fa-group" id="question"></i> 3295+
                         <br> Truy cập
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row" id="question">
-        <div class="faq pt-5 mb-5 ">
-            <div class="boxcenter ">
-                <h2 class="title ">Câu hỏi thường gặp</h2>
-                <div class="huongdan_btn ">
-                    <div class="active " onclick="giasu_qa() " id="btngiasuqa ">Gia sư</div>
-                    <div onclick="hocvien_qa() " id="btnhocvienqa ">Học viên</div>
+    <div class="row">
+        <div class="faq pt-5 mb-5">
+            <div class="boxcenter">
+                <h2 class="title">Câu hỏi thường gặp</h2>
+                <div class="huongdan_btn">
+                    <div class="active" onclick="giasu_qa()" id="btngiasuqa">Gia sư</div>
+                    <div onclick="hocvien_qa()" id="btnhocvienqa">Học viên</div>
                 </div>
                 <div id="qa_giasu">
-                    <div class="faq__text-item ">
-                        <div class="faq__title ">
-                            <i class="fa fa-comments " style="font-size:30px "></i>
+                    <div class="faq__text-item">
+                        <div class="faq__title">
+                            <i class="fa fa-comments" style="font-size:30px "></i>
                             <p>Nếu nhận lớp xong nhưng học viên không đồng ý học thì gia sư có được hoàn tiền không?</p>
                         </div>
-                        <div class="boxtext-faq ">
+                        <div class="boxtext-faq">
                             <div class="goc "></div>
                             <p> Với những tình huống được xác nhận từ phía phụ huynh không đồng ý học với gia sư đã chọn, công ty chúng tôi sẽ hoàn tiền vào ví cho gia sư trong vòng tối đa 24 tiếng và gia sư có thể rút về bất kỳ lúc nào.
                             </p>
                         </div>
                     </div>
-                    <div class="faq__text-item ">
+                    <div class="faq__text-item">
                         <div class="faq__title ">
                             <i class="fa fa-comments " style="font-size:30px "></i>
                             <p>Hồ sơ của gia sư như thế nào sẽ được duyệt?</p>
@@ -649,7 +648,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="qa_hocvien ">
+                <div id="qa_hocvien">
                     <div class="faq__text-item ">
                         <div class="faq__title ">
                             <i class="fa fa-comments " style="font-size:30px "></i>
@@ -734,19 +733,19 @@
                 <p>Đăng ký ngay để trải nghiệm sớm và nhận những phần quà cực kỳ hấp dẫn từ chúng tôi.</p>
                 <div class="uudai__boxbtn ">
                     <div class="btn-dk "><a href=" ">Đăng ký dạy</a></div>
-                    <div class="btn-dk btn-pd "><a href=" ">Tìm gia sư</a></div>
+                    <div class="btn-dk btn-pd "><a href=" " id="training">Tìm gia sư</a></div>
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="row" id="training">
+    <div class="row">
         <div class="huongdan ">
             <div class="huongdan_title ">
                 <h2 class="title ">Hướng dẫn sử dụng App</h2>
                 <div class="huongdan_btn ">
-                    <div class="active " onclick="giasu() " id="btngiasu ">Gia sư</div>
-                    <div onclick="hocvien() " id="btnhocvien ">Học viên</div>
+                    <div class="active " onclick="giasu() " id="btngiasu">Gia sư</div>
+                    <div onclick="hocvien() " id="btnhocvien">Học viên</div>
                 </div>
             </div>
             <div class="huongdan_page1 page ">
@@ -764,7 +763,7 @@
                     </div>
                 </div>
             </div>
-            <div id="giasu ">
+            <div id="giasu">
                 <div class="huongdan_page2 page ">
                     <div class="boxcenter ">
                         <div class="huongdan_img ">
@@ -827,7 +826,7 @@
                 </div>
             </div>
             <!-- HỌC VIÊN -->
-            <div id="hocvien ">
+            <div id="hocvien">
                 <div class="huongdan_page2 page ">
                     <div class="boxcenter ">
                         <div class="huongdan_img ">
@@ -872,7 +871,7 @@
                     </div>
                     <div class="goc "></div>
                 </div>
-                <div class="huongdan_page4 page " id="hocvienn ">
+                <div class="huongdan_page4 page " id="hocvienn">
                     <div class="boxcenter ">
                         <p><span class="step ">Bước 8:</span>Hoàn tất - bắt đầu học</p>
                         <img src="images/minhhoa/dayhoc2.svg " alt=" ">
@@ -1088,7 +1087,7 @@
 
         </div>
     </div>
-    <div class="go-to-top " id="gototopid ">go to top</div>
+    <div class="go-to-top " id="gototopid">go to top</div>
     <div class="row foot-end ">
         <p> Developping by Tran Quang Nhan</p>
     </div>
