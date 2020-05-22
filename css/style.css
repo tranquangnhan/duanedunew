@@ -20,6 +20,13 @@
 }
 
 @font-face {
+    font-family: AvoBold;
+    src: url("../font/SVN-Avo bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: Androgyne;
     src: url("../font/UTM-Androgyne.ttf") format("truetype");
     font-weight: normal;
@@ -663,6 +670,15 @@ p {
     margin: 0;
 }
 
+.student h2 {
+    font-family: AvoBold;
+}
+
+.student p, .student{
+    font-family: MyriadPro;
+    font-size: 15px;
+}
+
 .student img {
     padding-top: 80px;
 }
@@ -1072,6 +1088,17 @@ p {
 .blue {
     background-color: #13bf9e;
     min-height: 300px;
+}
+
+.boxicon {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxicon_nho img {
+    width: 80%;
 }
 
 .faq {
@@ -1667,7 +1694,7 @@ p {
     }
     .swiper-slide {
         cursor: pointer;
-        width: 100%;
+        width: 100% !important;
         text-align: center;
         font-size: 18px;
         height: max-content !important;
