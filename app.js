@@ -67,6 +67,7 @@ var boxsd1 = document.querySelectorAll(".box-sd1");
 var contenttext1 = document.querySelectorAll(".cttext1");
 var content = document.querySelector(".content");
 var contentshawdown = document.querySelector("#boxxt2");
+var contenttext2 = document.querySelector("#cttext2");
 for (let i = 0; i < btnxemthem1.length; i++) {
     btnxemthem1[i].addEventListener("click", slidedown1);
 
@@ -79,7 +80,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             boxsd1[i].style.height = "522px";
             contenttext1[i].style.minHeight = "100%";
             content.style.minHeight = '1370px';
-
+            btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
             // laptop
             //start điện thoại
             if (body.clientWidth < 740) {
@@ -104,15 +105,48 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             //sửa chữ xem thêm
             btnxemthem1[i].innerHTML = 'Xem Thêm';
         }
-        //nếu box 3 còn thì tắt box 3
-        if (contentshawdown.clientHeight >= 900) {
-            contentshawdown.style.height = "350px";
-            contenttext2.style.height = "230px";
-        }
-
 
     }
 }
+//==============sửa content shadow =======================//
+var xemthembtn = document.getElementsByClassName('xemthem');
+var boxcontentshadow = document.querySelectorAll('.content-shadow');
+
+xemthembtn[0].addEventListener('click', offboxshadow0);
+xemthembtn[1].addEventListener('click', offboxshadow1);
+xemthembtn[2].addEventListener('click', offboxshadow2);
+
+function offboxshadow0() {
+    if (boxcontentshadow[1].clientHeight > 350 || boxcontentshadow[2].clientHeight > 350) {
+        contentshawdown.style.height = "350px";
+        contenttext2.style.height = "230px";
+        boxsd1[1].style.height = "350px";
+        contenttext1[1].style.minHeight = "230px";
+    }
+}
+
+function offboxshadow1() {
+    if (boxcontentshadow[0].clientHeight > 350 || boxcontentshadow[2].clientHeight > 350) {
+        contentshawdown.style.height = "350px";
+        contenttext2.style.height = "230px";
+        boxsd1[0].style.height = "350px";
+        contenttext1[0].style.minHeight = "230px";
+    }
+}
+
+function offboxshadow2() {
+    if (boxcontentshadow[0].clientHeight > 350 || boxcontentshadow[1].clientHeight > 350) {
+        boxsd1[0].style.height = "350px";
+        contenttext1[0].style.minHeight = "230px";
+        boxsd1[1].style.height = "350px";
+        contenttext1[1].style.minHeight = "230px";
+    }
+}
+//==============sửa content shadow =======================//
+
+
+
+
 
 
 
@@ -120,7 +154,6 @@ for (let i = 0; i < btnxemthem1.length; i++) {
 
 var btnxemthem2 = document.querySelector("#xemthem2");
 
-var contenttext2 = document.querySelector("#cttext2");
 
 btnxemthem2.addEventListener("click", slidedown);
 
@@ -130,7 +163,7 @@ function slidedown() {
         contentshawdown.clientHeight === 420
     ) {
         contentshawdown.style.height = "700px";
-        btnxemthem2.innerHTML = "Thu nhỏ";
+        btnxemthem2.innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
         contenttext2.style.height = "100%";
         //start điện thoại
         if (body.clientWidth < 740) {
