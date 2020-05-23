@@ -77,9 +77,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             boxsd1[i].clientHeight === 350 ||
             boxsd1[i].clientHeight === 420
         ) {
-            // laptop
-
-
+            // màn hình lap top
             boxsd1[i].style.height = "522px";
             contenttext1[i].style.minHeight = "100%";
             content.style.minHeight = '1370px';
@@ -91,7 +89,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
                 //với màn hình nhỏ hơn 320 
                 if (body.clientWidth <= 320) {
                     boxsd1[1].style.height = "598px";
-                    //sửa lỗi màn hình cho điện thoại
+                    //sửa lỗi màn hình
                 }
                 boxsd1[i].style.minHeight = "100%";
                 //sửa chữ xem thêm
