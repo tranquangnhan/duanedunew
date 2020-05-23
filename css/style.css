@@ -389,8 +389,8 @@ p {
 
 .menu ul {
     list-style: none;
-    margin-top: 30px;
-    margin-right: 50px;
+    line-height: 100px;
+    margin: 0;
 }
 
 .menu ul li {
@@ -1003,8 +1003,12 @@ p {
 }
 
 .uudai__boxbtn {
-    width: 29%;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .uudai__boxbtn .btn-dk {
@@ -1684,7 +1688,9 @@ p {
         min-height: 582px;
     }
     .uudai .uudai__boxbtn {
-        width: 54%;
+        width: 55%;
+        display: flex;
+        flex-wrap: wrap;
     }
     .uudai .uudai__boxbtn .btn-dk {
         margin: 10px auto;
