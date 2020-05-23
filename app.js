@@ -291,6 +291,8 @@ showSlides((slideIndex = 0));
 // function currentSlide(n) {
 //     showSlides(slideIndex = n);
 // }
+
+//====================== menu đổi màu ============================//
 window.onscroll = function() {
     myFunction()
 };
@@ -313,7 +315,7 @@ if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
     document.querySelector('.navbar__icon i').style.color = 'black';
 }
 
-
+//====================== menu đổi màu ============================//
 // menu xem them
 
 var menuxemthem = document.querySelector('.navmb__xemthem');
