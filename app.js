@@ -201,7 +201,7 @@ function slidedown() {
 
     } else {
         contentshawdown.style.height = "350px";
-        contenttext2.style.height = "220px";
+        contenttext2.style.height = "220px"; //sua 220px cua content
         btnxemthem2.innerHTML = "Xem thêm";
         xemthembtn[2].style.right = '10px';
         content.style.minHeight = "1150px"; //kiểm tra nếu là ấn vào thì giản content ra hoặc thu lại
