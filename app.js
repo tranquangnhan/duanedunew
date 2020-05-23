@@ -171,7 +171,7 @@ function slidedown() {
             //xét lại height của content nếu click
             content.style.minHeight = "3440px";
             //sửa chữ xem thêm
-            btnxemthem2.innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
+            contentshawdown.innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
         }
         // end điện thoại
 
