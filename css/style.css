@@ -1836,6 +1836,9 @@ p {
     }
 }
 
+
+/* sửa lỗi màn hình 320px */
+
 @media only screen and (max-width: 321px) {
     .content__parent-about .content-parent {
         min-height: 805px;
