@@ -661,6 +661,10 @@ p {
     cursor: pointer;
 }
 
+.content__parent-about .thunho {
+    margin: 0 auto;
+}
+
 .content__parent-about .content-text {
     position: relative;
     height: 223px;
@@ -1224,7 +1228,7 @@ p {
         height: 303px;
     }
     .content__parent-about .content-text {
-        height: 303px;
+        height: 225px;
     }
     .content-shadow {
         margin-left: 8px;
