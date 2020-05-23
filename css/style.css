@@ -1843,6 +1843,7 @@ p {
     .content__parent-about .content-parent {
         min-height: 805px;
     }
+    /* sửa màn hình 320 */
     .content__parent-about .content-text p {
         font-size: 11pt;
     }
