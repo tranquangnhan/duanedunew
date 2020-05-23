@@ -90,8 +90,8 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             if (body.clientWidth < 740) {
                 //với màn hình nhỏ hơn 320 
                 if (body.clientWidth <= 320) {
-                    boxsd1[1].style.height = "588px";
-                    //sửa lỗi màn hình
+                    boxsd1[1].style.height = "598px";
+                    //sửa lỗi màn hình cho điện thoại
                 }
                 boxsd1[i].style.minHeight = "100%";
                 //sửa chữ xem thêm
