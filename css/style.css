@@ -1836,6 +1836,12 @@ p {
     }
 }
 
+@media only screen and (max-width: 320px) {
+    .content__parent-about .content-parent {
+        min-height: 805px;
+    }
+}
+
 
 /* Phúc Bình */
 
