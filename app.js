@@ -78,7 +78,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             boxsd1[i].clientHeight === 420
         ) {
             // màn hình lap top
-            boxsd1[i].style.height = "532px";
+            boxsd1[i].style.height = "535px";
             //sửa thành 532px
             contenttext1[i].style.minHeight = "100%";
             content.style.minHeight = '1370px';
@@ -201,7 +201,7 @@ function slidedown() {
 
     } else {
         contentshawdown.style.height = "350px";
-        contenttext2.style.height = "224px";
+        contenttext2.style.height = "220px";
         btnxemthem2.innerHTML = "Xem thêm";
         xemthembtn[2].style.right = '10px';
         content.style.minHeight = "1150px"; //kiểm tra nếu là ấn vào thì giản content ra hoặc thu lại
