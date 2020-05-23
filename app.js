@@ -328,13 +328,14 @@ function hienxemthem() {
     }
 }
 
-//Gắn cái onLoad gì dùm nha Nhân ml
 //Slide PB desktop
 
 
 function desktopsl() {
     var bSlide = document.querySelector('#swiperslidefirst');
     var bSlide2 = document.querySelector('#swiperslidefirst2');
+    var cham = document.getElementsByClassName('dots');
+    var cham2 = document.getElementsByClassName('dotss');
     bSlide.style.transition = '.4s';
     bSlide2.style.transition = '0.4s';
     var i = 0;
@@ -348,7 +349,12 @@ function desktopsl() {
             bSlide2.style.marginLeft = '0';
             i = 0;
         }
-
+        for (let x = 0; x < cham.length; x++) {
+            cham[x].className = cham[x].className.replace("active", "");
+            cham2[x].className = cham2[x].className.replace("active", "");
+        }
+        cham[i].className += " active";
+        cham2[i].className += " actives";
     }, 3000);
 }
 
@@ -357,10 +363,13 @@ desktopsl();
 function mobilesl() {
     var mslide = document.querySelector('#mobileslidefirst');
     var mslide2 = document.querySelector('#mobileslidefirst2');
+    var cham = document.getElementsByClassName('mdots');
+    var cham2 = document.getElementsByClassName('mdotss');
     mslide.style.transition = '0.4s';
     mslide2.style.transition = '0.4s';
     var i = 1;
     setInterval(() => {
+
         switch (i) {
             case 1:
                 mslide.style.marginLeft = '-100%';
@@ -393,6 +402,12 @@ function mobilesl() {
                 i = 1;
                 break;
         }
-    }, 2000);
+        for (let x = 0; x < cham.length; x++) {
+            cham[x].className = cham[x].className.replace("active", "");
+            cham2[x].className = cham2[x].className.replace("active", "");
+        }
+        cham[i - 1].className += " active";
+        cham2[i - 1].className += " actives";
+    }, 3000);
 }
 mobilesl();

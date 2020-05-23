@@ -1808,13 +1808,6 @@ p {
     .swiper-container {
         display: none;
     }
-    .swiper-pagination-bullet {
-        width: 18px !important;
-        height: 18px !important;
-    }
-    .swiper-pagination-bullet-active {
-        background-color: #fff !important;
-    }
     .swiper-slide,
     .swiper-slide-active {
         /* End slide */
@@ -2157,16 +2150,34 @@ h2.title {
     align-items: center;
 }
 
-.swiper-pagination-bullet {
-    width: 18px !important;
-    height: 18px !important;
+.thanhdot, .thanhdotmobile {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+.thanhdot .active, .thanhdotmobile .active {
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-.swiper-pagination-bullet-active {
+.thanhdot .dots , .thanhdot .dotss, .thanhdotmobile .mdots, .thanhdotmobile .mdotss{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.dotss, .mdotss{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.actives {
     background-color: #fff !important;
 }
-
-
 /* End slide */
 
 
@@ -2220,9 +2231,6 @@ h2.title {
     margin: 60px 0 0 0;
 }
 
-.uudiem__box .swiper-pagination-bullet-active {
-    background-color: #000 !important;
-}
 
 #about,
 .faq .title {
