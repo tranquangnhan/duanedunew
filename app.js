@@ -90,7 +90,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
                 //với màn hình nhỏ hơn 320 
                 if (body.clientWidth <= 320) {
                     boxsd1[1].style.height = "605px"; //sua lai thanh 605px
-                    //sửa lỗi màn hình
+                    //sửa lỗi màn hìdấdsadasdasdasadsasdasd
                 }
                 boxsd1[i].style.minHeight = "100%";
                 //sửa chữ xem thêm
