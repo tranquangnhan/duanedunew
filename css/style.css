@@ -1845,7 +1845,7 @@ p {
     }
     /* sửa màn hình 320 */
     .content__parent-about .content-text p {
-        font-size: 11pt;
+        font-size: 11pt !important;
     }
     .huongdan_btn>div {
         width: 125px !important;
