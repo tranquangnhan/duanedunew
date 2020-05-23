@@ -78,7 +78,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             boxsd1[i].clientHeight === 420
         ) {
             // màn hình lap top
-            boxsd1[i].style.height = "522px";
+            boxsd1[i].style.height = "532px";
             contenttext1[i].style.minHeight = "100%";
             content.style.minHeight = '1370px';
             btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
