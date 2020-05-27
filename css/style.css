@@ -593,7 +593,7 @@ p {
 .content .abu {
     width: 80%;
     margin: 0 auto;
-    text-align: left;
+    text-align: justify;
     font-family: Avo;
     font-size: 12pt;
     line-height: 120%;
@@ -720,12 +720,12 @@ p {
 }
 
 .student h2 {
-    font-family: AvoBold;
+    font-family: Avo;
 }
 
 .student p,
 .student {
-    font-family: MyriadPro;
+    font-family: Avo;
     font-size: 15px;
 }
 
@@ -1384,9 +1384,6 @@ p {
         }
     }
     /* end menu */
-    .boxtext-faq {
-        min-height: 150px;
-    }
     /* Phúc Bình tablet */
     h2.title {
         font-size: 25px;
@@ -1456,7 +1453,9 @@ p {
         display: none;
     }
 
-
+    .swiper-slide {
+        width: 48% !important;
+    }
 }
 
 
@@ -1598,7 +1597,7 @@ p {
     .content .abu {
         width: 80%;
         margin: 0 auto;
-        text-align: center;
+        text-align: justify
     }
     .col-4,
     .col-5,
@@ -1768,7 +1767,8 @@ p {
         flex-direction: column;
     }
     .huongdan_btn>div {
-        padding: 0 30px !important;
+        width: 100px !important;
+        font-size: 15px !important;
     }
     .huongdan .box {
         width: 100% !important;
