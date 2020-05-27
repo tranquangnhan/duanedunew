@@ -419,3 +419,25 @@ function mobilesl() {
     }, 3000);
 }
 mobilesl();
+
+// Q&A
+var question = document.getElementsByClassName('faq__title');
+var anwser = document.getElementsByClassName('boxtext-faq');
+var taiday = 0;
+for (let i = 0; i < question.length; i++) {
+    $(question[i]).click(function (e) { 
+        e.preventDefault();
+        taiday = i;
+        toggleNangCao(taiday);
+    });
+}
+function toggleNangCao(x) {
+    for (let i = 0; i < question.length; i++) {
+        if (i==x) 
+            $(anwser[i]).slideDown();
+        else
+            $(anwser[i]).slideUp();
+    }
+}
+
+

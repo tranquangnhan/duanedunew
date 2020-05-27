@@ -936,6 +936,7 @@ p {
     display: flex;
     align-items: center;
     height: fit-content;
+    cursor: pointer;
 }
 
 .boxtext-faq {
@@ -945,6 +946,7 @@ p {
     background-color: #f2f2f2;
     position: relative;
     padding: 10px 20px;
+    display: none;
 }
 
 .boxtext-faq .goc {
