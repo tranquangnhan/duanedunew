@@ -595,7 +595,7 @@ p {
 .content .abu {
     width: 80%;
     margin: 0 auto;
-    text-align: left;
+    text-align: justify;
     font-family: Avo;
     font-size: 12pt;
     line-height: 120%;
@@ -722,12 +722,12 @@ p {
 }
 
 .student h2 {
-    font-family: AvoBold;
+    font-family: Avo;
 }
 
 .student p,
 .student {
-    font-family: MyriadPro;
+    font-family: Avo;
     font-size: 15px;
 }
 
@@ -938,6 +938,7 @@ p {
     display: flex;
     align-items: center;
     height: fit-content;
+    cursor: pointer;
 }
 
 .boxtext-faq {
@@ -947,6 +948,7 @@ p {
     background-color: #f2f2f2;
     position: relative;
     padding: 10px 20px;
+    display: none;
 }
 
 .boxtext-faq .goc {
@@ -1384,9 +1386,6 @@ p {
         }
     }
     /* end menu */
-    .boxtext-faq {
-        min-height: 150px;
-    }
     /* Phúc Bình tablet */
     h2.title {
         font-size: 25px;
@@ -1450,6 +1449,14 @@ p {
     }
     .chuyen-slide {
         display: none;
+    }
+
+    .uudiem__box {
+        display: none;
+    }
+
+    .swiper-slide {
+        width: 48% !important;
     }
 }
 
@@ -1592,7 +1599,7 @@ p {
     .content .abu {
         width: 80%;
         margin: 0 auto;
-        text-align: center;
+        text-align: justify
     }
     .col-4,
     .col-5,
@@ -1734,7 +1741,7 @@ p {
         text-align: center;
     }
     .contact .footer h3 {
-        text-align: center;
+        text-align: left;
     }
     .contact .map {
         width: 100%;
@@ -1762,7 +1769,8 @@ p {
         flex-direction: column;
     }
     .huongdan_btn>div {
-        padding: 0 30px !important;
+        width: 100px !important;
+        font-size: 15px !important;
     }
     .huongdan .box {
         width: 100% !important;
@@ -1794,8 +1802,8 @@ p {
     .swiper-container-mobile {
         width: 100%;
         height: 100%;
-        overflow: hidden;
         display: block !important;
+        overflow: hidden;
         position: relative;
     }
     .swiper-slide {
@@ -1835,6 +1843,10 @@ p {
         margin: 0;
         height: 100px;
         background-color: #3a1b0a;
+    }
+
+    .uudiem__box {
+        display: none;
     }
 }
 

@@ -431,3 +431,19 @@ function mobilesl() {
     }, 3000);
 }
 mobilesl();
+
+// Q&A
+var question = document.getElementsByClassName('faq__title');
+var anwser = document.getElementsByClassName('boxtext-faq');
+var taiday = 0;
+for (let i = 0; i < question.length; i++) {
+    $(question[i]).click(function (e) { 
+        e.preventDefault();
+        $(anwser[i]).slideToggle();
+        //Chọn các phần tử anh em của nó và cho ẩn đi
+        $(anwser[i]).parent().siblings().children(".boxtext-faq").slideUp();
+        console.log();
+    });   
+}
+
+
