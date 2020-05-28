@@ -1,3 +1,5 @@
+var body = document.querySelector("body");
+//get element body
 var kichthuoc = document.getElementsByClassName("slide")[0].clientWidth;
 var chuyenSlide = document.getElementsByClassName("chuyen-slide")[0]; // lấy kích thức tất cả ảnh
 var maxlength = document.querySelectorAll(".chuyen-slide__boximg"); //tìm kích thước lớn nhất
@@ -20,7 +22,7 @@ function lui() {
     }
     chuyenSlide.style.marginLeft = "-" + chuyen + "px";
 }
-setInterval("tiep()", 3000);
+setInterval("tiep()", 5000);
 
 if (kichthuoc < 769) {
     var respon = document.querySelector(".chuyen-slide__boximg");
@@ -28,6 +30,16 @@ if (kichthuoc < 769) {
     respon.style.width = kichthuoc + "px";
     respon2.style.width = kichthuoc + "px";
 }
+
+// xét width banner
+
+var imgBanner = document.querySelectorAll('.chuyen-slide .chuyen-slide__boximg');
+for (let i = 0; i < imgBanner.length; i++) {
+    imgBanner[i].style.width = body.clientWidth + 'px';
+}
+
+
+// xét width banner
 
 
 
@@ -61,7 +73,7 @@ function offnav() {
 // navbar
 
 // code slideTogger
-var body = document.querySelector("body");
+
 var btnxemthem1 = document.querySelectorAll(".btnxemthem1");
 var boxsd1 = document.querySelectorAll(".box-sd1");
 var contenttext1 = document.querySelectorAll(".cttext1");

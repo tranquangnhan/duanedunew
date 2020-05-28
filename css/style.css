@@ -97,7 +97,7 @@ p {
 }
 
 .boxcenter {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -131,7 +131,7 @@ p {
 }
 
 .chuyen-slide .chuyen-slide__boximg {
-    width: 1349px;
+    /* width: 1349px; */
     height: 855px;
     object-fit: cover;
     float: left;
@@ -145,7 +145,7 @@ p {
 
 .dieuhuong i {
     position: absolute;
-    z-index: 100;
+    z-index: 2;
     left: 50px;
     color: white;
 }
@@ -153,7 +153,7 @@ p {
 .dieuhuong i:last-child {
     position: absolute;
     left: 1275px;
-    z-index: 100;
+    z-index: 2;
 }
 
 
@@ -391,7 +391,7 @@ p {
 .menu ul {
     list-style: none;
     line-height: 100px;
-    margin: 0;
+    margin: 0 30px 0 0;
 }
 
 .menu ul li ul {
@@ -426,6 +426,8 @@ p {
     display: none;
     width: 220px;
     transition: 0.2s;
+    z-index: 3;
+    left: -8%;
 }
 
 .menu ul li ul li {
@@ -2096,7 +2098,7 @@ h2.title {
 }
 
 .review_user_avatar img {
-    width: 100%;
+    width: 70%;
 }
 
 .review .review_user_content {
@@ -2126,7 +2128,7 @@ h2.title {
 }
 
 .review_user_name {
-    font-size: 20px;
+    font-size: 18pt;
     text-align: center;
 }
 
