@@ -74,40 +74,46 @@ function offnav() {
 
 // code slideTogger
 
-var btnxemthem1 = document.querySelectorAll(".btnxemthem1");
+
 var boxsd1 = document.querySelectorAll(".box-sd1");
 var contenttext1 = document.querySelectorAll(".cttext1");
 var content = document.querySelector(".content");
-var contentshawdown = document.querySelector("#boxxt2");
 var contenttext2 = document.querySelector("#cttext2");
-var xemthembtn = document.getElementsByClassName('xemthem');
+var btnxemthem1 = document.querySelectorAll('.xemthem');
+//lấy content parent bên mobile
+var contentParent = document.querySelectorAll('.content-parent');
+
 for (let i = 0; i < btnxemthem1.length; i++) {
     btnxemthem1[i].addEventListener("click", slidedown1);
 
     function slidedown1() {
         if (
-            boxsd1[i].clientHeight === 350 ||
-            boxsd1[i].clientHeight === 420
+            boxsd1[i].clientHeight == 350
         ) {
             // màn hình lap top
-            boxsd1[i].style.height = "535px";
-            //sửa thành 532px
+            boxsd1[i].style.height = "545px";
+            //sửa thành 535px
             contenttext1[i].style.minHeight = "100%";
-            content.style.minHeight = '1370px';
+            content.style.minHeight = '1185px';
             btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
-            xemthembtn[i].style.right = '41%';
+            btnxemthem1[i].style.right = '41%';
             // laptop
             //start điện thoại
             if (body.clientWidth < 740) {
                 //với màn hình nhỏ hơn 320 
                 if (body.clientWidth <= 320) {
                     boxsd1[1].style.height = "605px"; //sua lai thanh 605px
-                    //sửa lỗi màn hìdấdsadasdasdasadsasdasd
+                    //sửa lỗi màn
                 }
                 boxsd1[i].style.minHeight = "100%";
                 //sửa chữ xem thêm
                 btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
-                xemthembtn[i].style.right = '41%';
+                btnxemthem1[i].style.right = '41%';
+                if (boxsd1[i].clientHeight == 350) {
+                    contentParent[i].style.minHeight = '785px';
+
+                }
+
             }
             //end điện thoại
             // start ipad
@@ -117,109 +123,92 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             //end ipad
         } else {
             // laptop
-
-
-            contenttext1[i].style.minHeight = "230px";
+            contenttext1[i].style.minHeight = "156px";
             btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
-            xemthembtn[i].style.right = '41%';
-            content.style.minHeight = '1150px';
+            btnxemthem1[i].style.right = '41%';
+            // content.style.minHeight = '985px';
             boxsd1[i].style.height = "350px";
             //sửa chữ xem thêm
             btnxemthem1[i].innerHTML = 'Xem Thêm';
-            xemthembtn[i].style.right = '10px';
+            btnxemthem1[i].style.right = '10px';
+
+
         }
 
     }
 }
+
+
 //==============sửa content shadow =======================//
 
 var boxcontentshadow = document.querySelectorAll('.content-shadow');
 
-xemthembtn[0].addEventListener('click', offboxshadow0);
-xemthembtn[1].addEventListener('click', offboxshadow1);
-xemthembtn[2].addEventListener('click', offboxshadow2);
+btnxemthem1[0].addEventListener('click', offboxshadow0);
+btnxemthem1[1].addEventListener('click', offboxshadow1);
+btnxemthem1[2].addEventListener('click', offboxshadow2);
 
 function offboxshadow0() {
     if (boxcontentshadow[1].clientHeight > 350 || boxcontentshadow[2].clientHeight > 350) {
-        contentshawdown.style.height = "350px";
-        contenttext2.style.height = "224px";
         boxsd1[1].style.height = "350px";
-        contenttext1[1].style.minHeight = "230px";
+        boxsd1[2].style.height = "350px";
+        contenttext1[1].style.minHeight = "156px";
+        contenttext1[2].style.minHeight = "156px";
+        btnxemthem1[1].innerHTML = 'Xem Thêm';
+        btnxemthem1[2].innerHTML = 'Xem Thêm';
+        btnxemthem1[1].style.right = '10px';
+        btnxemthem1[2].style.right = '10px';
     }
 }
 
 function offboxshadow1() {
     if (boxcontentshadow[0].clientHeight > 350 || boxcontentshadow[2].clientHeight > 350) {
-        contentshawdown.style.height = "350px";
-        contenttext2.style.height = " 224px";
         boxsd1[0].style.height = "350px";
-        contenttext1[0].style.minHeight = "230px";
+        boxsd1[2].style.height = "350px";
+        contenttext1[0].style.minHeight = "156px";
+        contenttext1[2].style.minHeight = "156px";
+        btnxemthem1[0].innerHTML = 'Xem Thêm';
+        btnxemthem1[2].innerHTML = 'Xem Thêm';
+        btnxemthem1[0].style.right = '10px';
+        btnxemthem1[2].style.right = '10px';
     }
 }
 
 function offboxshadow2() {
     if (boxcontentshadow[0].clientHeight > 350 || boxcontentshadow[1].clientHeight > 350) {
         boxsd1[0].style.height = "350px";
-        contenttext1[0].style.minHeight = "230px";
         boxsd1[1].style.height = "350px";
-        contenttext1[1].style.minHeight = "230px";
+        contenttext1[0].style.minHeight = "156px";
+        contenttext1[1].style.minHeight = "156px";
+        btnxemthem1[0].innerHTML = 'Xem Thêm';
+        btnxemthem1[1].innerHTML = 'Xem Thêm';
+        btnxemthem1[0].style.right = '10px';
+        btnxemthem1[1].style.right = '10px';
     }
 }
 //==============sửa content shadow =======================//
 
+// ==================== click vào content ẩn các box shadow ======================//
+content.addEventListener('click', anboxshadow);
 
-
-
-
-
-
-//boxshadow 2
-
-var btnxemthem2 = document.querySelector("#xemthem2");
-
-
-btnxemthem2.addEventListener("click", slidedown);
-
-function slidedown() {
-    if (
-        contentshawdown.clientHeight === 350 ||
-        contentshawdown.clientHeight === 420
-    ) {
-        contentshawdown.style.height = "700px";
-        btnxemthem2.innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
-        contenttext2.style.height = "100%";
-        xemthembtn[2].style.right = '41%';
-        //start điện thoại
-        if (body.clientWidth < 740) {
-            contentshawdown.style.height = "900px";
-            //xét lại height của content nếu click
-            content.style.minHeight = "3440px";
-            //sửa chữ xem thêm
-            btnxemthem2.innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
-            // xemthembtn[i].style.right = '41%';
-        }
-        // end điện thoại
-
-        //start ipad
-        if (body.clientWidth > 740 && body.clientWidth < 1024) {
-            contentshawdown.style.height = "1150px";
-            content.style.minHeight = "1860px";
-        }
-        //end ipad
-
-        if (body.clientWidth >= 900) {
-            content.style.minHeight = "1400px";
+function anboxshadow() {
+    for (let i = 0; i < boxsd1.length; i++) {
+        if (boxcontentshadow[i].clientHeight > 350) {
+            boxsd1[i].style.height = "350px";
+            contenttext1[i].style.minHeight = "156px";
+            btnxemthem1[i].innerHTML = 'Xem Thêm';
+            btnxemthem1[i].style.right = '10px';
+            content.style.minHeight = '985px';
         }
 
-    } else {
-        contentshawdown.style.height = "350px";
-        contenttext2.style.height = "220px"; //sua 220px cua content
-        btnxemthem2.innerHTML = "Xem thêm";
-        xemthembtn[2].style.right = '10px';
-        content.style.minHeight = "1150px"; //kiểm tra nếu là ấn vào thì giản content ra hoặc thu lại
-        //sửa chữ xem thêm
     }
 }
+
+
+
+
+// ==================== click vào content ẩn các box shadow ======================//
+
+
 // box quyền lợi
 var iconbtn = document.querySelectorAll(".fa-angle-right");
 for (let i = 0; i < iconbtn.length; i++) {
@@ -431,19 +420,3 @@ function mobilesl() {
     }, 3000);
 }
 mobilesl();
-
-// Q&A
-var question = document.getElementsByClassName('faq__title');
-var anwser = document.getElementsByClassName('boxtext-faq');
-var taiday = 0;
-for (let i = 0; i < question.length; i++) {
-    $(question[i]).click(function (e) { 
-        e.preventDefault();
-        $(anwser[i]).slideToggle();
-        //Chọn các phần tử anh em của nó và cho ẩn đi
-        $(anwser[i]).parent().siblings().children(".boxtext-faq").slideUp();
-        console.log();
-    });   
-}
-
-
