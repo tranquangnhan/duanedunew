@@ -352,28 +352,28 @@ function hienxemthem() {
 
 
 function desktopsl() {
-    var bSlide = document.querySelector('#swiperslidefirst');
-    var bSlide2 = document.querySelector('#swiperslidefirst2');
-    var cham = document.getElementsByClassName('dots');
+    // var //bslide = document.querySelector('#swiperslidefirst');
+    var bslide2 = document.querySelector('#swiperslidefirst2');
+    // var cham = document.getElementsByClassName('dots');
     var cham2 = document.getElementsByClassName('dotss');
-    bSlide.style.transition = '.4s';
-    bSlide2.style.transition = '0.4s';
+    // //bslide.style.transition = '.4s';
+    bslide2.style.transition = '0.4s';
     var i = 0;
     setInterval(() => {
         if (i == 0) {
-            bSlide.style.marginLeft = '-103%';
-            bSlide2.style.marginLeft = '-103%';
+            //bslide.style.marginLeft = '-103%';
+            bslide2.style.marginLeft = '-103%';
             i = 1;
         } else {
-            bSlide.style.marginLeft = '0';
-            bSlide2.style.marginLeft = '0';
+            //bslide.style.marginLeft = '0';
+            bslide2.style.marginLeft = '0';
             i = 0;
         }
-        for (let x = 0; x < cham.length; x++) {
-            cham[x].className = cham[x].className.replace("active", "");
+        for (let x = 0; x < cham2.length; x++) {
+            // cham[x].className = cham[x].className.replace("active", "");
             cham2[x].className = cham2[x].className.replace("active", "");
         }
-        cham[i].className += " active";
+        // cham[i].className += " active";
         cham2[i].className += " actives";
     }, 3000);
 }
@@ -381,52 +381,52 @@ function desktopsl() {
 desktopsl();
 //Slide PB mobile
 function mobilesl() {
-    var mslide = document.querySelector('#mobileslidefirst');
+    // var mslide = document.querySelector('#mobileslidefirst');
     var mslide2 = document.querySelector('#mobileslidefirst2');
-    var cham = document.getElementsByClassName('mdots');
+    // var cham = document.getElementsByClassName('mdots');
     var cham2 = document.getElementsByClassName('mdotss');
-    mslide.style.transition = '0.4s';
+    // //mslide.style.transition = '0.4s';
     mslide2.style.transition = '0.4s';
     var i = 1;
     setInterval(() => {
 
         switch (i) {
             case 1:
-                mslide.style.marginLeft = '-100%';
+                //mslide.style.marginLeft = '-100%';
                 mslide2.style.marginLeft = '-100%';
                 i++;
                 break;
             case 2:
-                mslide.style.marginLeft = '-200%';
+                //mslide.style.marginLeft = '-200%';
                 mslide2.style.marginLeft = '-200%';
                 i++;
                 break;
             case 3:
-                mslide.style.marginLeft = '-300%';
+                //mslide.style.marginLeft = '-300%';
                 mslide2.style.marginLeft = '-300%';
                 i++;
                 break;
             case 4:
-                mslide.style.marginLeft = '-400%';
+                //mslide.style.marginLeft = '-400%';
                 mslide2.style.marginLeft = '-400%';
                 i++;
                 break;
             case 5:
-                mslide.style.marginLeft = '-500%';
+                //mslide.style.marginLeft = '-500%';
                 mslide2.style.marginLeft = '-500%';
                 i++;
                 break;
             case 6:
-                mslide.style.marginLeft = '0';
+                //mslide.style.marginLeft = '0';
                 mslide2.style.marginLeft = '0';
                 i = 1;
                 break;
         }
-        for (let x = 0; x < cham.length; x++) {
-            cham[x].className = cham[x].className.replace("active", "");
+        for (let x = 0; x < cham2.length; x++) {
+            // cham[x].className = cham[x].className.replace("active", "");
             cham2[x].className = cham2[x].className.replace("active", "");
         }
-        cham[i - 1].className += " active";
+        // cham[i - 1].className += " active";
         cham2[i - 1].className += " actives";
     }, 3000);
 }

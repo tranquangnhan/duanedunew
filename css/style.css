@@ -1424,6 +1424,11 @@ p {
     .huongdan .page {
         min-height: unset !important;
     }
+
+    .review {
+        height: 570px !important;
+    }
+
     .review .col-4 {
         width: 100% !important;
         display: none;
@@ -1829,13 +1834,7 @@ p {
     .swiper-container {
         display: none;
     }
-    .swiper-slide,
-    .swiper-slide-active {
-        /* End slide */
-    }
-    .review {
-        height: auto !important;
-    }
+
     .slideshow-container {
         margin-top: 100px;
     }
@@ -2070,7 +2069,7 @@ h2.title {
     background-image: url(../images/banner6.bmp);
     background-size: cover;
     position: relative;
-    height: auto;
+    height: 560px;
     display: flex;
     z-index: 1;
 }
@@ -2110,7 +2109,11 @@ h2.title {
 }
 
 .review_user_avatar img {
-    width: 70%;
+    width: 100%;
+}
+
+.uudiem__box .review_user_avatar img {
+    width: 80%;
 }
 
 .review .review_user_content {
@@ -2227,6 +2230,18 @@ h2.title {
     background-color: #fff !important;
 }
 
+.swiper-pagination-bullet {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.uudiem__box .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+}
 
 /* End slide */
 
