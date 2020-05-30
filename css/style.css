@@ -772,10 +772,14 @@ p {
     cursor: pointer;
 }
 
+.quyenloi__title {
+    cursor: pointer;
+}
+
 .quyenloi-xemthem {
-    display: none;
     margin-left: 20px;
     padding: 10px 5px;
+    display: none;
 }
 
 .quyenloi-xemthem i {
