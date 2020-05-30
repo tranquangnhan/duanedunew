@@ -209,23 +209,23 @@ function anboxshadow() {
 // ==================== click vào content ẩn các box shadow ======================//
 
 
-// box quyền lợi
-var iconbtn = document.querySelectorAll(".fa-angle-right");
-for (let i = 0; i < iconbtn.length; i++) {
-    iconbtn[i].addEventListener("click", boxshow);
-    iconbtn[i].style.transition = "0.2s";
+// // box quyền lợi
+// var iconbtn = document.querySelectorAll(".fa-angle-right");
+// for (let i = 0; i < iconbtn.length; i++) {
+//     iconbtn[i].addEventListener("click", boxshow);
+//     iconbtn[i].style.transition = "0.2s";
 
-    function boxshow() {
-        var quyenloixemthem = document.querySelectorAll(".quyenloi-xemthem");
-        if (quyenloixemthem[i].style.display == "block") {
-            iconbtn[i].style.transform = "rotate(0deg)";
-            quyenloixemthem[i].style.display = "none";
-        } else {
-            quyenloixemthem[i].style.display = "block";
-            iconbtn[i].style.transform = "rotate(90deg)";
-        }
-    }
-}
+//     function boxshow() {
+//         var quyenloixemthem = document.querySelectorAll(".quyenloi-xemthem");
+//         if (quyenloixemthem[i].style.display == "block") {
+//             iconbtn[i].style.transform = "rotate(0deg)";
+//             quyenloixemthem[i].style.display = "none";
+//         } else {
+//             quyenloixemthem[i].style.display = "block";
+//             iconbtn[i].style.transform = "rotate(90deg)";
+//         }
+//     }
+// }
 
 
 

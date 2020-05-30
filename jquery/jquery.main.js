@@ -1,7 +1,20 @@
+//Quyền lợi
+var qltitle = $(".quyenloi__title");
+var qlcontent = $(".quyenloi-xemthem");
+var icon = $(".fa-angle-right");
+for (let i = 0; i < qltitle.length; i++) {
+    $(qltitle[i]).click(function (e) { 
+        e.preventDefault();
+        $(qlcontent[i]).slideToggle();
+        $(qlcontent[i]).parent().siblings().children(".quyenloi-xemthem").slideUp();
+        icon[i].style.transition = "0.4s";
+    });
+    
+}
+
 // Q&A
 var question = document.getElementsByClassName('faq__title');
 var anwser = document.getElementsByClassName('boxtext-faq');
-var taiday = 0;
 for (let i = 0; i < question.length; i++) {
     $(question[i]).click(function(e) {
         e.preventDefault();
@@ -37,3 +50,5 @@ $(window).on('scroll', function() {
 })
 
 //end count
+
+
