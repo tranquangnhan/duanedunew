@@ -241,28 +241,10 @@ for (let i = 0; i < iconbtn.length; i++) {
 
 
 // Phúc Bình JS
-var boxgiasu = document.getElementById("giasu");
-var boxhocvien = document.getElementById("hocvien");
-var btngiasu = document.getElementById("btngiasu");
-var btnhocvien = document.getElementById("btnhocvien");
 var boxgiasuqa = document.getElementById("qa_giasu");
 var boxhocvienqa = document.getElementById("qa_hocvien");
 var btngiasuqa = document.getElementById("btngiasuqa");
 var btnhocvienqa = document.getElementById("btnhocvienqa");
-
-function giasu() {
-    boxhocvien.style.display = "none";
-    boxgiasu.style.display = "block";
-    btnhocvien.classList.remove("active");
-    btngiasu.classList.add("active");
-}
-
-function hocvien() {
-    boxgiasu.style.display = "none";
-    boxhocvien.style.display = "block";
-    btnhocvien.classList.add("active");
-    btngiasu.classList.remove("active");
-}
 
 function giasu_qa() {
     boxhocvienqa.style.display = "none";
