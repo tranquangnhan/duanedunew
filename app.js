@@ -323,6 +323,20 @@ if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
 }
 
 //====================== menu đổi màu ============================//
+
+
+//======================menu active ================================//
+
+var btns = document.querySelectorAll('#menuActive li a');
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active2");
+        current[0].className = current[0].className.replace(" active2", "");
+        this.className += " active2";
+    });
+}
+
+//======================menu active ================================//
 // menu xem them
 
 var menuxemthem = document.querySelector('.navmb__xemthem');
