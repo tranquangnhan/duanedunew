@@ -2069,7 +2069,7 @@ h2.title {
     background-image: url(../images/banner6.bmp);
     background-size: cover;
     position: relative;
-    height: auto;
+    height: 700px;
     display: flex;
     z-index: 1;
 }
