@@ -26,7 +26,7 @@
                 <div id="navmb__off"><i class="fa fa-times"></i></div>
                 <li><a href="#home">Trang chủ</a></li>
                 <li><a href="#vechungtoi2">Về Chúng Tôi</a></li>
-                <li><a href="#xemthem2">Đăng Kí Dạy</a></li>
+                <li><a href="#xemthem2">Đăng ký Dạy</a></li>
                 <li><a href="#searchteacher">Tìm Gia Sư</a></li>
                 <li id="clickxemthemmb">Xem Thêm <i class="fa fa-angle-down" style="font-size:16px"></i>
                     <ul class="navmb__xemthem">
@@ -83,7 +83,7 @@
                                     <div class="box__welcome2-p">
                                         <p> Bạn là một sinh viên? Hoặc bạn đã tốt nghiệp? Bạn muốn tìm thêm công việc để tăng thu nhập đồng thời có thể rèn luyện trao dồi về kiến thức, kỹ năng</p>
                                     </div>
-                                    <div class="btn-dk">Đăng Kí Ngay</div>
+                                    <div class="btn-dk">Đăng ký Ngay</div>
                                 </div>
 
                             </div>
@@ -131,7 +131,7 @@
                         <ul id="menuActive">
                             <li><a href="#home" class=" active2">Trang chủ</a></li>
                             <li><a href="#vechungtoi">Về chúng tôi</a></li>
-                            <li><a href="#xemthem2">Đăng kí dạy</a></li>
+                            <li><a href="#xemthem2">Đăng ký dạy</a></li>
                             <li><a href="#searchteacher">Tìm gia sư</a></li>
                             <li> Xem thêm <i class="fa fa-angle-down" style="font-size:23px"></i>
                                 <ul>
@@ -206,7 +206,7 @@
                 <h2 class="title">Ưu điểm tìm kiếm gia sư tại DigEdu</h2>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" id="swiperslidefirst">
+                        <div class="swiper-slide">
                             <div class="review_user">
                                 <div class="review_user_avatar">
                                     <img src="images/icon/list.svg" alt="">
@@ -256,28 +256,23 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-slide">
                             <div class="review_user">
                                 <div class="review_user_avatar">
                                     <img src="images/icon/job.svg" alt="">
                                 </div>
-                                <div class="review_user_content " id="vechungtoi">
+                                <div class="review_user_content">
                                     <div class="review_user_name"><span>Đội ngũ chuyên môn</span></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <div class="thanhdot">
-                        <div class="dots active"></div>
-                        <div class="dots"></div>
-                    </div>
                 </div>
                 <!-- MOBILE SLIDE -->
                 <div class="swiper-container-mobile">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" id="mobileslidefirst">
+                        <div class="swiper-slide">
                             <div class="review_user">
                                 <div class="review_user_avatar">
                                     <img src="images/icon/list.svg" alt="">
@@ -332,7 +327,7 @@
                                 <div class="review_user_avatar">
                                     <img src="images/icon/job.svg" alt="">
                                 </div>
-                                <div class="review_user_content" id="vechungtoi2">
+                                <div class="review_user_content">
                                     <div class="review_user_name"><span>Đội ngũ chuyên môn</span></div>
                                 </div>
                             </div>
@@ -340,14 +335,7 @@
 
                     </div>
                     <!-- Add Pagination -->
-                    <div class="thanhdotmobile">
-                        <div class="mdots actives"></div>
-                        <div class="mdots"></div>
-                        <div class="mdots"></div>
-                        <div class="mdots"></div>
-                        <div class="mdots"></div>
-                        <div class="mdots"></div>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -437,7 +425,7 @@
         <div class="boxcenter student__content">
             <div class="col-7 col-sm-6 mr">
                 <div class="text-teacher cl-b">
-                    <h2>ĐĂNG KÝ TRỞ THÀNH GIA SƯ</h2>
+                    <h2>ĐĂNG KÝ <br> TRỞ THÀNH GIA SƯ</h2>
                     <div class="gach"></div>
                     <div class="quyenloi">
                         <p>Bạn là một sinh viên? Hoặc bạn đã tốt nghiệp? Bạn muốn tìm thêm công việc để tăng thu nhập đồng thời có thể rèn luyện trao dồi về kiến thức, kỹ năng.</p>
@@ -487,11 +475,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="btn-dk cl-b"><a href="">Đăng kí ngay</a></div>
+                    <div class="btn-dk cl-b"><a href="">Đăng ký ngay</a></div>
                 </div>
             </div>
             <div class="col-5 col-sm-6 student__img">
-                <img class="teacher_img-item" src="images/minhhoa/teacher_img.svg" alt="">
+                <img id="teacher_img-item" src="images/minhhoa/teacher_img.svg" alt="">
             </div>
         </div>
     </div>
@@ -765,155 +753,13 @@
 
         </div>
     </div>
-    <!-- <div class="row" id="training">
-        <div class="huongdan">
-            <div class="huongdan_title">
-                <h2 class="title">Hướng dẫn sử dụng App</h2>
-                <div class="huongdan_btn">
-                    <div class="active" onclick="giasu()" id="btngiasu">Gia sư</div>
-                    <div onclick="hocvien()" id="btnhocvien">Học viên</div>
-                </div>
-            </div>
-            <div class="huongdan_page1 page">
-                <div class="boxcenter">
-                    <div class="box">
-                        <p><span class="step">Bước 1:</span>Tải App DigEdu từ CH Play <br> hoặc Appstore về máy</p>
-                        <img src="images/qrcode.jpg" alt="" class="qrcode">
-                        <div class="download">
-                            <a href="#"><img src="images/btn_android.png" alt=""></a>
-                            <a href="#"><img src="images/btn_ios.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="images/screenshot/1.png" alt="" class="anhmh">
-                    </div>
-                </div>
-            </div>
-            <div id="giasu">
-                <div class="huongdan_page2 page">
-                    <div class="boxcenter">
-                        <div class="huongdan_img">
-                            <div class="box">
-                                <img src="images/screenshot/giasu/2.png" alt="">
-                                <p><span class="step">Bước 2:</span><span>“Đăng ký” </span>tài khoản</p>
-                            </div>
-                            <div class="line-box">
-                                <img src="images/line.svg" alt="">
-                            </div>
-                            <div class="box">
-                                <img src="images/screenshot/giasu/3.png" alt="">
-                                <p><span class="step">Bước 3:</span><span>“Khai báo thông tin” </span><br>đầy đủ</p>
-                            </div>
-                            <div class="line-box">
-                                <img src="images/line.svg" alt="">
-                            </div>
-                            <div class="box">
-                                <img src="images/screenshot/giasu/4.png" alt="">
-                                <p><span class="step">Bước 4:</span><span>"Nhận lớp phù hợp"</span><br>hoặc chấp nhận
-                                    <br><span>"Lời mời trực tiếp"</span> <br> từ học viên</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="goc"></div>
-                </div>
-                <div class="huongdan_page2 page">
-                    <div class="boxcenter">
-                        <div class="huongdan_img">
-                            <div class="box">
-                                <img src="images/screenshot/giasu/5.png" alt="">
-                                <p><span class="step">Bước 5:</span><span>“Thanh toán” </span> &nbsp;&nbsp;&nbsp;&nbsp;
-                                </p>
-                            </div>
-                            <div class="line-box">
-                                <img src="images/line.svg" alt="">
-                            </div>
-                            <div class="box">
-                                <img src="images/screenshot/giasu/6.png" alt="">
-                                <p><span class="step">Bước 6:</span>Nhận lớp thành công</p>
-                            </div>
-                            <div class="line-box">
-                                <img src="images/line.svg" alt="">
-                            </div>
-                            <div class="box">
-                                <img src="images/screenshot/giasu/7.png" alt="">
-                                <p><span class="step">Bước 7:</span>Vào <span>"thông báo"</span><br>để liên hệ trực tiếp
-                                    <br>với học viên</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="goc"></div>
-                </div>
-                <div class="huongdan_page4 page">
-                    <div class="boxcenter">
-                        <p><span class="step">Bước 8:</span>Hoàn tất - bắt đầu dạy</p>
-                        <img src="images/minhhoa/dayhoc.svg" alt="">
-                    </div>
-                    <div class="goc"></div>
-                </div>
-            </div>
-            HỌC VIÊN 
-            <div id="hocvien">
-                <div class="huongdan_page2 page">
-                    <div class="boxcenter">
-                        <div class="huongdan_img">
-                            <div class="box">
-                                <img src="images/screenshot/giasu/2.png" alt="">
-                                <p><span class="step">Bước 2:</span><span>“Đăng ký” </span>tài khoản</p>
-                            </div>
-                            <div class="line-box">
-                                <img src="images/line.svg" alt="">
-                            </div>
-                            <div class="box">
-                                <img src="images/screenshot/hocvien/3.png" alt="">
-                                <p><span class="step">Bước 3:</span><span>“Khai báo thông tin” </span></p>
-                            </div>
-                            <div class="line-box">
-                                <img src="images/line.svg" alt="">
-                            </div>
-                            <div class="box">
-                                <img src="images/screenshot/giasu/4.png" alt="">
-                                <p><span class="step">Bước 4:</span>Gửi lời mời dạy trực tiếp <br>đến <span>"Gia sư tiêu biểu"</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="goc"></div>
-                </div>
-                <div class="huongdan_page2 page">
-                    <div class="boxcenter">
-                        <div class="huongdan_img">
-                            <div class="box">
-                                <img src="images/screenshot/hocvien/5.png" alt="">
-                                <p><span class="step">Bước 5:</span>Nếu chưa tìm được <br> gia sư phù hợp ? <br>hãy
-                                    <span>"Tạo yêu cầu"</span> ngay</p>
-                            </div>
-                            <div class="line-box">
-                                <img src="images/line.svg" alt="">
-                            </div>
-                            <div class="box">
-                                <img src="images/screenshot/giasu/7.png" alt="">
-                                <p><span class="step">Bước 6:</span>Vào <span>"thông báo"</span><br>để liên hệ trực tiếp với gia sư</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="goc"></div>
-                </div>
-                <div class="huongdan_page4 page" id="hocvienn">
-                    <div class="boxcenter">
-                        <p><span class="step">Bước 8:</span>Hoàn tất - bắt đầu học</p>
-                        <img src="images/minhhoa/dayhoc2.svg" alt="">
-                    </div>
-                    <div class="goc"></div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="row">
         <div class="review">
             <div class="boxcenter">
                 <h2 class="title">Đánh giá tiêu biểu</h2>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" id="swiperslidefirst2">
+                        <div class="swiper-slide">
                             <div class="review_user">
                                 <div class="review_user_avatar">
                                     <img src="images/customer/1.png" alt="">
@@ -958,7 +804,7 @@
                                 </div>
                                 <div class="review_user_content">
                                     <div class="review_user_name">Anh <span>Lê Tuấn Mạnh</span></div>
-                                    <p>Tôi đã tải App và tìm kiếm gia sư trên DigEdu. Kết quả học tập của con tôi đã tiến bộ trong 1 tháng đầu học.</p>
+                                    <p>Tôi là sinh viên! Nhờ đăng ký trở thành gia sư của DigEdu mà tôi đã có nguồn thu nhập đáng kể.</p>
                                     <div class="goc"></div>
                                 </div>
                             </div>
@@ -988,15 +834,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="thanhdot">
-                        <div class="dotss actives"></div>
-                        <div class="dotss"></div>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <!-- MOBILE SLIDE -->
                 <div class="swiper-container-mobile">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" id="mobileslidefirst2">
+                        <div class="swiper-slide">
                             <div class="review_user">
                                 <div class="review_user_avatar">
                                     <img src="images/customer/1.png" alt="">
@@ -1072,14 +915,7 @@
                         </div>
                     </div>
                     <!-- Add Pagination -->
-                    <div class="thanhdotmobile">
-                        <div class="mdotss actives"></div>
-                        <div class="mdotss"></div>
-                        <div class="mdotss"></div>
-                        <div class="mdotss"></div>
-                        <div class="mdotss"></div>
-                        <div class="mdotss"></div>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -1130,6 +966,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
+
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -1148,6 +985,7 @@
             },
         });
     </script>
+
     <!-- Thư viện count to -->
     <script src="./jquery/jquery-2.2.4.min.js"></script>
     <script src="./jquery/jquery.countTo.js"></script>
