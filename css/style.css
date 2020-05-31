@@ -471,7 +471,7 @@ p {
     z-index: 999999;
     transition: 1s ease;
     display: block;
-    min-height: 100px;
+    height: 100px;
     float: right;
     width: 100%;
 }
@@ -1093,6 +1093,10 @@ p {
     text-align: center;
 }
 
+.footer-logo img {
+    width: 80%;
+}
+
 .footer i {
     float: left;
     margin-right: 20px;
@@ -1170,6 +1174,10 @@ p {
     padding-bottom: 3rem;
 }
 
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
 .pt-5 {
     padding-top: 5rem;
 }
@@ -1240,7 +1248,7 @@ p {
         left: unset;
     }
     .content {
-        min-height: 1150px;
+        min-height: 985px;
     }
     .content__parent-about .content-text ul {
         margin-bottom: 10px;
@@ -1251,7 +1259,7 @@ p {
     }
     .content-shadow {
         margin-left: 8px;
-        min-height: 420px;
+        min-height: 350px;
     }
     .mt-0 {
         margin-top: 0;
@@ -1500,14 +1508,14 @@ p {
         width: 90%;
         height: 50%;
         padding-top: 0;
-        z-index: 100;
+        z-index: 2;
         transform: unset;
     }
     .text-banner .btn-dk {
-        max-width: 163px;
-        height: 46px;
+        max-width: 130px;
+        height: 40px;
         margin: 22px 0;
-        line-height: 46px;
+        line-height: 40px;
     }
     .text-banner .welcome h1 {
         font-size: 15pt;
@@ -1533,7 +1541,7 @@ p {
         position: fixed;
         color: #fff;
         cursor: pointer;
-        line-height: 100px;
+        line-height: 80px;
         z-index: 6;
     }
     .navbar__icon i {
@@ -1596,9 +1604,18 @@ p {
         }
     }
     /* end menu */
+    .logo {
+        height: 70px;
+    }
     .logo img {
-        width: 70px;
-        min-height: 50px;
+        width: 65px;
+        height: 62px;
+        margin-top: 14px;
+    }
+    .bg__banner2,
+    .bg__banner {
+        height: 80px;
+        z-index: 999999999999999999;
     }
     .content .abu {
         width: 80%;
@@ -1621,6 +1638,7 @@ p {
     }
     .content__parent-about .content-parent {
         min-height: 625px;
+        transition: 0.5s;
     }
     .content__parent-about .content-shadow {
         display: block;
@@ -1628,7 +1646,7 @@ p {
     }
     /* btn thu nho */
     .student {
-        min-height: 1000px;
+        min-height: 650px;
         flex-direction: column;
     }
     .student {
@@ -1643,7 +1661,7 @@ p {
         width: 100%;
         /* height: 300px; */
         text-align: center;
-        font-size: 25pt;
+        font-size: 22pt;
     }
     .student .text-teacher .gach {
         margin: 0 auto;
@@ -1661,6 +1679,7 @@ p {
         margin: 0 auto;
         display: block;
         padding-top: 30px;
+        display: none;
     }
     .student .student__img img {
         margin-top: 30px;
@@ -1841,12 +1860,13 @@ p {
         height: auto !important;
     }
     .slideshow-container {
-        margin-top: 100px;
+        margin-top: 80px;
     }
     .bg__banner {
         margin: 0;
-        height: 100px;
+        height: 80px;
         background-color: #3a1b0a;
+        display: none;
     }
     .uudiem__box {
         display: none;
