@@ -221,10 +221,6 @@ p {
 
 /*================= start banner mobile============================ */
 
-.slideshow-container {}
-
-.dot {}
-
 
 /* Slideshow container */
 
@@ -1471,9 +1467,7 @@ p {
     .slide {
         display: none;
     }
-    .boxcontentbn {
-        /* display: none; */
-    }
+
     .slideshow-container {
         position: relative;
     }
@@ -1832,10 +1826,7 @@ p {
     .swiper-container {
         display: none;
     }
-    .swiper-slide,
-    .swiper-slide-active {
-        /* End slide */
-    }
+
     .review {
         height: auto !important;
     }
