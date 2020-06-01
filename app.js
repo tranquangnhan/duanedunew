@@ -326,14 +326,43 @@ function hienxemthem() {
     }
 }
 
-//Slide PB desktop
+//slide tablet
+function tabletsl() {
+    var tcham = document.getElementsByClassName('tdot');
+    var tSlide2 = document.querySelector('#swiperslidetablet');
+    tSlide2.style.transition = '.6s';
+    var i = 0; //Thanh dot
+    var x = 0; //Cuon man hinh
+    var time = setInterval(() => {
+        if (x > 220) {
+            tSlide2.style.transition = '.6s';
+            tSlide2.style.transform = "translateX(0%)";
+            x=50 + 2.7;
+            i=0;
+        }
+        else {
+            tSlide2.style.transition = '.6s';
+            console.log(x);
+            console.log(screen.width);
+            tSlide2.style.transform = "translateX(-" + x + "%)";
+            x+=50 + 2.7;
+        }
+        for (let x = 0; x < tcham.length; x++) {
+            tcham[x].className = tcham[x].className.replace("actives", "");
+        }
+        tcham[i].className += " actives";
+        i++;
+    }, 3000);
+}
+tabletsl();
+
+//Slide PB desktop 
 
 var thanhdot = document.getElementsByClassName('swiper-pagination');
 thanhdot[2].style.display = 'none';
-var cham = document.getElementsByClassName('dotss');
 function desktopsl() {
+    var cham = document.getElementsByClassName('dotss');
     var bSlide2 = document.querySelector('#swiperslidefirst2');
-    var Slidewidth = bSlide2.clientWidth;
     bSlide2.style.transition = '.6s';
     var i = 0; //Thanh dot
     var x = 0; //Cuon man hinh
@@ -347,6 +376,7 @@ function desktopsl() {
         else {
             bSlide2.style.transition = '.6s';
             console.log(x);
+            console.log(screen.width);
             bSlide2.style.transform = "translateX(-" + x + "%)";
             x+=100/3 + 1;
         }
@@ -406,6 +436,14 @@ function mobilesl() {
 }
 mobilesl();
 
+
+//Slide tablet
+var tablet = document.getElementsByClassName('swiper-container-tablet');
+if (screen.width >= 740 || screen.width <=1023) {
+    tablet.style.display = 'block';
+}
+else
+    tablet.style.display = 'none';
 
 // =====================sửa nút điều hướng banner ===================///
 var iconBannerL = document.querySelector('.iconBannerL');
