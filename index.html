@@ -24,17 +24,17 @@
         <div class="navbar__mobile" id="navbarmb">
             <ul>
                 <div id="navmb__off"><i class="fa fa-times"></i></div>
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#vechungtoi2">Về Chúng Tôi</a></li>
-                <li><a href="#xemthem2">Đăng ký Dạy</a></li>
-                <li><a href="#searchteacher">Tìm Gia Sư</a></li>
+                <li onclick="hidenav()"><a href="#home">Trang chủ</a></li>
+                <li onclick="hidenav()"><a href="#vechungtoi2">Về Chúng Tôi</a></li>
+                <li onclick="hidenav()"><a href="#xemthem2">Đăng ký Dạy</a></li>
+                <li onclick="hidenav()"><a href="#searchteacher">Tìm Gia Sư</a></li>
                 <li id="clickxemthemmb">Xem Thêm <i class="fa fa-angle-down" style="font-size:16px"></i>
                     <ul class="navmb__xemthem">
                         <li><a href="https://www.facebook.com/digedu.vn/">Cộng đồng</a>
                             <li><a href="./chinh-sach/index.html">Chính sách sử dụng</a>
                                 <li><a href="#question">Câu hỏi thường gặp</a>
                                     <li><a href="./huong-dan/index.html">Hướng dẫn sử dụng</a>
-                                        <li><a href="#contact">Liên hệ</a>
+                                        <li onclick="hidenav()"><a href="#contact">Liên hệ</a>
                     </ul>
                     </li>
             </ul>
@@ -131,7 +131,7 @@
                         <ul id="menuActive">
                             <li><a href="#home" class=" active2">Trang chủ</a></li>
                             <li><a href="#vechungtoi">Về chúng tôi</a></li>
-                            <li><a href="#xemthem2">Đăng ký dạy</a></li>
+                            <li><a href="#xemthem">Đăng ký dạy</a></li>
                             <li><a href="#searchteacher">Tìm gia sư</a></li>
                             <li> Xem thêm <i class="fa fa-angle-down" style="font-size:23px"></i>
                                 <ul>
@@ -232,7 +232,7 @@
                                     <img src="images/icon/teacher.svg" alt="">
                                 </div>
                                 <div class="review_user_content">
-                                    <div class="review_user_name"><span>Tìm kiếm gia sư chất lượng</span></div>
+                                    <div class="review_user_name" id="vechungtoi"><span>Tìm kiếm gia sư chất lượng</span></div>
                                 </div>
                             </div>
                         </div>
@@ -340,7 +340,7 @@
             </div>
         </div>
     </div>
-    <div class="row mb-0">
+    <div class="row mb-0" id="vechungtoi2">
         <div class="content">
             <div class="boxcenter2 mt-3">
                 <h2 id="about" class="title">Về chúng tôi</h2>
@@ -407,7 +407,8 @@
                                         <li>Chất lượng hàng đầu: Cam kết mang đến chất lượng gia sư với trình độ chuyên môn cao, đạo đức tốt, tận tâm với nghề.</li>
                                     </ul>
                                 </div>
-                                <div class="xemthem">Xem Thêm</div>
+                                <div class="xemthem" id="xemthem">Xem Thêm</div>
+                                <!-- id xem thêm của menu  -->
                             </div>
                         </div>
                     </div>
@@ -420,7 +421,7 @@
 
     <!-- TEACHER START -->
 
-    <div class="student row student1">
+    <div class="student row student1" id="xemthem2">
 
         <div class="boxcenter student__content">
             <div class="col-7 col-sm-6 mr">

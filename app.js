@@ -48,9 +48,11 @@ var navbarmb = document.getElementById("navbarmb");
 var navbaric = document.getElementById("navbaric");
 var navbarrg = document.getElementById("navbarrg");
 var nboff = document.getElementById("navmb__off");
+
 navbaric.addEventListener("click", shownav);
 navbarrg.addEventListener("click", hidenav);
 nboff.addEventListener("click", offnav);
+
 
 function shownav() {
     if ((navbarmb.style.transform = "translateX(100%)")) {
@@ -70,6 +72,8 @@ function offnav() {
     navbarmb.style.transform = "translateX(100%)";
     navbarrg.style.display = "none";
 }
+
+
 // navbar
 
 // code slideTogger
