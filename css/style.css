@@ -144,16 +144,9 @@ p {
 }
 
 .dieuhuong i {
-    position: absolute;
     z-index: 2;
-    left: 50px;
     color: white;
-}
-
-.dieuhuong i:last-child {
     position: absolute;
-    left: 1275px;
-    z-index: 2;
 }
 
 
@@ -877,7 +870,6 @@ p {
 .icon-blue span {
     width: 50%;
     text-align: center;
-    float: left;
     padding-left: 5px;
 }
 
@@ -1701,7 +1693,7 @@ p {
     /* start- icon blue */
     .icon-blue img {
         display: block;
-        margin: 0 auto;
+        margin: 0 20px;
         margin-bottom: 6px;
         width: 50%;
         height: 45px;
@@ -1726,6 +1718,7 @@ p {
     /* box ưu đãi */
     .uudai {
         min-height: 582px;
+        background-size: 138% 100%;
     }
     .uudai .uudai__boxbtn {
         width: 55%;
