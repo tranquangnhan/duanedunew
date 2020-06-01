@@ -50,5 +50,3 @@ $(window).on('scroll', function() {
 })
 
 //end count
-
-
