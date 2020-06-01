@@ -966,15 +966,17 @@ p {
 }
 
 .uudai {
-    background-image: url("../images/giaovien-bg.png");
+    background-image: url(../images/giaovien-bg.png);
     text-align: center;
     min-height: 530px;
     background-attachment: fixed;
-    background-size: 1350px 800px;
     background-repeat: no-repeat;
     position: relative;
     text-align: center;
+    background-size: cover;
+    background-position: center;
 }
+
 
 .uudai .uudai-content h2 {
     color: #ffe266;
