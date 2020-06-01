@@ -1814,6 +1814,7 @@ p {
     /* Review Slide */
     .review .boxcenter {
         width: 90%;
+        height: 500px;
     }
     .slideshow-container {
         display: block !important;

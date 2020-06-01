@@ -359,46 +359,52 @@ function desktopsl() {
 }
 desktopsl();
 //Slide PB mobile
-// function mobilesl() {
-//     var mslide2 = document.querySelector('#mobileslidefirst2');
-//     var cham2 = document.getElementsByClassName('mdotss');
-//     mslide2.style.transition = '0.4s';
-//     var i = 1;
-//     setInterval(() => {
+function mobilesl() {
+    var mslide2 = document.querySelector('#mobileslidefirst2');
+    var cham2 = document.getElementsByClassName('mdotss');
+    mslide2.style.transition = '0.4s';
+    var i = 1;
+    setInterval(() => {
 
-//         switch (i) {
-//             case 1:
-//                 mslide2.style.marginLeft = '-100%';
-//                 i++;
-//                 break;
-//             case 2:
-//                 mslide2.style.marginLeft = '-200%';
-//                 i++;
-//                 break;
-//             case 3:
-//                 mslide2.style.marginLeft = '-300%';
-//                 i++;
-//                 break;
-//             case 4:
-//                 mslide2.style.marginLeft = '-400%';
-//                 i++;
-//                 break;
-//             case 5:
-//                 mslide2.style.marginLeft = '-500%';
-//                 i++;
-//                 break;
-//             case 6:
-//                 mslide2.style.marginLeft = '0';
-//                 i = 1;
-//                 break;
-//         }
-//         for (let x = 0; x < cham2.length; x++) {
-//             cham2[x].className = cham2[x].className.replace("active", "");
-//         }
-//         cham2[i - 1].className += " actives";
-//     }, 3000);
-// }
-// mobilesl();
+        switch (i) {
+            case 1:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-100%)";
+                i++;
+                break;
+            case 2:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-200%)";
+                i++;
+                break;
+            case 3:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-300%)";
+                i++;
+                break;
+            case 4:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-400%)";
+                i++;
+                break;
+            case 5:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-500%)";
+                i++;
+                break;
+            case 6:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(0%)";
+                i=1;
+                break;
+        }
+        for (let x = 0; x < cham2.length; x++) {
+            cham2[x].className = cham2[x].className.replace("active", "");
+        }
+        cham2[i - 1].className += " actives";
+    }, 3000);
+}
+mobilesl();
 
 
 // =====================sửa nút điều hướng banner ===================///
