@@ -352,38 +352,35 @@ function hienxemthem() {
 
 //Slide PB desktop
 
-
+var thanhdot = document.getElementsByClassName('swiper-pagination');
+thanhdot[2].style.display = 'none';
+var cham = document.getElementsByClassName('dotss');
 function desktopsl() {
     var bSlide2 = document.querySelector('#swiperslidefirst2');
     var Slidewidth = bSlide2.clientWidth;
     bSlide2.style.transition = '.6s';
-    var i = 0;
-    var x = 0;
+    var i = 0; //Thanh dot
+    var x = 0; //Cuon man hinh
     var time = setInterval(() => {
-        if (x > 130) {
+        if (x > 103) {
             bSlide2.style.transition = '.6s';
             bSlide2.style.transform = "translateX(0%)";
-            x=0;
+            x=34.333333333333336;
+            i=0;
         }
         else {
             bSlide2.style.transition = '.6s';
-        bSlide2.style.transform = "translateX(-" + x + "%)";
-        x+=100/3 + 1;
+            console.log(x);
+            bSlide2.style.transform = "translateX(-" + x + "%)";
+            x+=100/3 + 1;
         }
-        // if (i == 0) {
-        //     bSlide2.style.marginLeft = '-103%';
-        //     i = 1;
-        // } else {
-        //     bSlide2.style.marginLeft = '0';
-        //     i = 0;
-        // }
-        // for (let x = 0; x < cham2.length; x++) {
-        //     cham2[x].className = cham2[x].className.replace("active", "");
-        // }
-        // cham2[i].className += " actives";
+        for (let x = 0; x < cham.length; x++) {
+            cham[x].className = cham[x].className.replace("active", "");
+        }
+        cham[i].className += " actives";
+        i++;
     }, 3000);
 }
-
 desktopsl();
 //Slide PB mobile
 // function mobilesl() {

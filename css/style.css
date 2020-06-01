@@ -1435,6 +1435,9 @@ p {
     .review .boxcenter {
         flex-direction: column;
     }
+    .review .swiper-pagination {
+        display: none;
+    }
     .huongdan .page {
         min-height: unset !important;
     }
