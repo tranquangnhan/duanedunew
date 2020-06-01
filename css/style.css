@@ -1284,7 +1284,6 @@ p {
         display: block;
         padding-top: 30px;
     }
-
     #teacher_img-item {
         width: 100% !important;
     }
@@ -1471,6 +1470,9 @@ p {
     .swiper-slide {
         width: 48% !important;
     }
+    .gach {
+        margin: 5px 0 15px 2px;
+    }
 }
 
 
@@ -1481,7 +1483,6 @@ p {
     .slide {
         display: none;
     }
-
     .slideshow-container {
         position: relative;
     }
@@ -1645,7 +1646,7 @@ p {
     }
     /* btn thu nho */
     .student {
-        min-height: 650px;
+        min-height: 515px;
         flex-direction: column;
     }
     .student {
@@ -1660,11 +1661,7 @@ p {
         width: 100%;
         /* height: 300px; */
         text-align: center;
-<<<<<<< HEAD
         font-size: 22pt;
-=======
-        font-size: 23pt;
->>>>>>> b36cb7605fdd7cb4e1d5203f27e0a8bcfaabb205
     }
     .student .text-teacher .gach {
         margin: 0 auto;
@@ -1689,7 +1686,7 @@ p {
         width: 50%;
     }
     .student .btn-dk {
-        margin: 50px auto;
+        margin: 28px auto;
     }
     .student__content {
         display: flex;
@@ -1757,7 +1754,7 @@ p {
         padding: 20px;
     }
     .contact .footer-logo {
-        width: 30%;
+        width: 85%;
     }
     .contact .footer-logo img {
         margin: auto;
@@ -1855,7 +1852,6 @@ p {
     .swiper-container {
         display: none;
     }
-
     .review {
         height: auto !important;
     }
@@ -2357,8 +2353,8 @@ h2.title {
 
 .uudiem__box .swiper-pagination-bullet-active {
     background-color: #000 !important;
-
 }
+
 .swiper-pagination-bullet-active {
     background-color: #fff !important;
 }
