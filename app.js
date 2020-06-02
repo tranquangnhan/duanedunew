@@ -337,15 +337,14 @@ function tabletsl() {
         if (x > 220) {
             tSlide2.style.transition = '.6s';
             tSlide2.style.transform = "translateX(0%)";
-            x=50 + 2.7;
-            i=0;
-        }
-        else {
+            x = 50 + 2.7;
+            i = 0;
+        } else {
             tSlide2.style.transition = '.6s';
             console.log(x);
             console.log(screen.width);
             tSlide2.style.transform = "translateX(-" + x + "%)";
-            x+=50 + 2.7;
+            x += 50 + 2.7;
         }
         for (let x = 0; x < tcham.length; x++) {
             tcham[x].className = tcham[x].className.replace("actives", "");
@@ -360,6 +359,7 @@ tabletsl();
 
 var thanhdot = document.getElementsByClassName('swiper-pagination');
 thanhdot[2].style.display = 'none';
+
 function desktopsl() {
     var cham = document.getElementsByClassName('dotss');
     var bSlide2 = document.querySelector('#swiperslidefirst2');
@@ -370,15 +370,14 @@ function desktopsl() {
         if (x > 103) {
             bSlide2.style.transition = '.6s';
             bSlide2.style.transform = "translateX(0%)";
-            x=34.333333333333336;
-            i=0;
-        }
-        else {
+            x = 34.333333333333336;
+            i = 0;
+        } else {
             bSlide2.style.transition = '.6s';
             console.log(x);
             console.log(screen.width);
             bSlide2.style.transform = "translateX(-" + x + "%)";
-            x+=100/3 + 1;
+            x += 100 / 3 + 1;
         }
         for (let x = 0; x < cham.length; x++) {
             cham[x].className = cham[x].className.replace("active", "");
@@ -387,6 +386,14 @@ function desktopsl() {
         i++;
     }, 3000);
 }
+
+// ==========================sửa nút điều hướng banner=====================///
+var iconBannerL = document.querySelector('.iconBannerL');
+var iconBannerR = document.querySelector('.iconBannerR');
+iconBannerL.style.left = '40px';
+iconBannerR.style.left = body.clientWidth - 50 + 'px'
+    // =====================sửa nút điều hướng banner========================///
+
 desktopsl();
 //Slide PB mobile
 function mobilesl() {
@@ -425,7 +432,7 @@ function mobilesl() {
             case 6:
                 mslide2.style.transition = '0.4s';
                 mslide2.style.transform = "translateX(0%)";
-                i=1;
+                i = 1;
                 break;
         }
         for (let x = 0; x < cham2.length; x++) {
@@ -439,14 +446,7 @@ mobilesl();
 
 //Slide tablet
 var tablet = document.getElementsByClassName('swiper-container-tablet');
-if (screen.width >= 740 || screen.width <=1023) {
+if (screen.width >= 740 || screen.width <= 1023) {
     tablet.style.display = 'block';
-}
-else
+} else
     tablet.style.display = 'none';
-
-// =====================sửa nút điều hướng banner ===================///
-var iconBannerL = document.querySelector('.iconBannerL');
-var iconBannerR = document.querySelector('.iconBannerR');
-iconBannerL.style.left = '40px';
-iconBannerR.style.left = body.clientWidth - 50 + 'px'
