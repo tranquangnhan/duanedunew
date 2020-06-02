@@ -387,7 +387,7 @@ function desktopsl() {
     }, 3000);
 }
 
-// ========================sửa nút điều hướng banner=====================///
+// ==========================sửa nút điều hướng banner=====================///
 var iconBannerL = document.querySelector('.iconBannerL');
 var iconBannerR = document.querySelector('.iconBannerR');
 iconBannerL.style.left = '40px';

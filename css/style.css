@@ -150,7 +150,7 @@ p {
 }
 
 
-/* =============box__welcome2=================== */
+/* ================box__welcome2=================== */
 
 .box__welcome2 {
     width: 100%;
@@ -969,7 +969,6 @@ p {
     background-position: center;
 }
 
-
 .uudai .uudai-content h2 {
     color: #ffe266;
     margin: 20px auto;
@@ -1468,11 +1467,9 @@ p {
     .gach {
         margin: 5px 0 15px 2px;
     }
-
     .swiper-container-tablet {
         display: block !important;
     }
-
     .swiper-container {
         display: none;
     }
