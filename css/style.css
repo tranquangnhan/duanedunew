@@ -1427,6 +1427,9 @@ p {
     .review .boxcenter {
         flex-direction: column;
     }
+    .review .swiper-pagination {
+        display: none;
+    }
     .huongdan .page {
         min-height: unset !important;
     }
@@ -1464,6 +1467,14 @@ p {
     }
     .gach {
         margin: 5px 0 15px 2px;
+    }
+
+    .swiper-container-tablet {
+        display: block !important;
+    }
+
+    .swiper-container {
+        display: none;
     }
 }
 
@@ -1811,6 +1822,7 @@ p {
     /* Review Slide */
     .review .boxcenter {
         width: 90%;
+        height: 500px;
     }
     .slideshow-container {
         display: block !important;
@@ -2219,6 +2231,7 @@ h2.title {
 
 .thanhdot .dots,
 .thanhdot .dotss,
+.tdot,
 .thanhdotmobile .mdots,
 .thanhdotmobile .mdotss {
     height: 18px;
@@ -2231,6 +2244,7 @@ h2.title {
 }
 
 .dotss,
+.tdot,
 .mdotss {
     background-color: rgba(255, 255, 255, 0.3) !important;
 }
@@ -2350,4 +2364,8 @@ h2.title {
 
 .swiper-pagination-bullet-active {
     background-color: #fff !important;
+}
+
+.swiper-container-tablet {
+    display: none;
 }

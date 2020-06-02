@@ -326,83 +326,124 @@ function hienxemthem() {
     }
 }
 
-//Slide PB desktop
-
-
-function desktopsl() {
-    var bSlide2 = document.querySelector('#swiperslidefirst2');
-    var Slidewidth = bSlide2.clientWidth;
-    bSlide2.style.transition = '.6s';
-    var i = 0;
-    var x = 0;
+//slide tablet
+function tabletsl() {
+    var tcham = document.getElementsByClassName('tdot');
+    var tSlide2 = document.querySelector('#swiperslidetablet');
+    tSlide2.style.transition = '.6s';
+    var i = 0; //Thanh dot
+    var x = 0; //Cuon man hinh
     var time = setInterval(() => {
-        if (x > 130) {
+        if (x > 220) {
+            tSlide2.style.transition = '.6s';
+            tSlide2.style.transform = "translateX(0%)";
+            x=50 + 2.7;
+            i=0;
+        }
+        else {
+            tSlide2.style.transition = '.6s';
+            console.log(x);
+            console.log(screen.width);
+            tSlide2.style.transform = "translateX(-" + x + "%)";
+            x+=50 + 2.7;
+        }
+        for (let x = 0; x < tcham.length; x++) {
+            tcham[x].className = tcham[x].className.replace("actives", "");
+        }
+        tcham[i].className += " actives";
+        i++;
+    }, 3000);
+}
+tabletsl();
+
+//Slide PB desktop 
+
+var thanhdot = document.getElementsByClassName('swiper-pagination');
+thanhdot[2].style.display = 'none';
+function desktopsl() {
+    var cham = document.getElementsByClassName('dotss');
+    var bSlide2 = document.querySelector('#swiperslidefirst2');
+    bSlide2.style.transition = '.6s';
+    var i = 0; //Thanh dot
+    var x = 0; //Cuon man hinh
+    var time = setInterval(() => {
+        if (x > 103) {
             bSlide2.style.transition = '.6s';
             bSlide2.style.transform = "translateX(0%)";
-            x=0;
+            x=34.333333333333336;
+            i=0;
         }
         else {
             bSlide2.style.transition = '.6s';
-        bSlide2.style.transform = "translateX(-" + x + "%)";
-        x+=100/3 + 1;
+            console.log(x);
+            console.log(screen.width);
+            bSlide2.style.transform = "translateX(-" + x + "%)";
+            x+=100/3 + 1;
         }
-        // if (i == 0) {
-        //     bSlide2.style.marginLeft = '-103%';
-        //     i = 1;
-        // } else {
-        //     bSlide2.style.marginLeft = '0';
-        //     i = 0;
-        // }
-        // for (let x = 0; x < cham2.length; x++) {
-        //     cham2[x].className = cham2[x].className.replace("active", "");
-        // }
-        // cham2[i].className += " actives";
+        for (let x = 0; x < cham.length; x++) {
+            cham[x].className = cham[x].className.replace("active", "");
+        }
+        cham[i].className += " actives";
+        i++;
     }, 3000);
 }
-
 desktopsl();
 //Slide PB mobile
-// function mobilesl() {
-//     var mslide2 = document.querySelector('#mobileslidefirst2');
-//     var cham2 = document.getElementsByClassName('mdotss');
-//     mslide2.style.transition = '0.4s';
-//     var i = 1;
-//     setInterval(() => {
+function mobilesl() {
+    var mslide2 = document.querySelector('#mobileslidefirst2');
+    var cham2 = document.getElementsByClassName('mdotss');
+    mslide2.style.transition = '0.4s';
+    var i = 1;
+    setInterval(() => {
 
-//         switch (i) {
-//             case 1:
-//                 mslide2.style.marginLeft = '-100%';
-//                 i++;
-//                 break;
-//             case 2:
-//                 mslide2.style.marginLeft = '-200%';
-//                 i++;
-//                 break;
-//             case 3:
-//                 mslide2.style.marginLeft = '-300%';
-//                 i++;
-//                 break;
-//             case 4:
-//                 mslide2.style.marginLeft = '-400%';
-//                 i++;
-//                 break;
-//             case 5:
-//                 mslide2.style.marginLeft = '-500%';
-//                 i++;
-//                 break;
-//             case 6:
-//                 mslide2.style.marginLeft = '0';
-//                 i = 1;
-//                 break;
-//         }
-//         for (let x = 0; x < cham2.length; x++) {
-//             cham2[x].className = cham2[x].className.replace("active", "");
-//         }
-//         cham2[i - 1].className += " actives";
-//     }, 3000);
-// }
-// mobilesl();
+        switch (i) {
+            case 1:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-100%)";
+                i++;
+                break;
+            case 2:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-200%)";
+                i++;
+                break;
+            case 3:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-300%)";
+                i++;
+                break;
+            case 4:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-400%)";
+                i++;
+                break;
+            case 5:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(-500%)";
+                i++;
+                break;
+            case 6:
+                mslide2.style.transition = '0.4s';
+                mslide2.style.transform = "translateX(0%)";
+                i=1;
+                break;
+        }
+        for (let x = 0; x < cham2.length; x++) {
+            cham2[x].className = cham2[x].className.replace("active", "");
+        }
+        cham2[i - 1].className += " actives";
+    }, 3000);
+}
+mobilesl();
 
+
+//Slide tablet
+var tablet = document.getElementsByClassName('swiper-container-tablet');
+if (screen.width >= 740 || screen.width <=1023) {
+    tablet.style.display = 'block';
+}
+else
+    tablet.style.display = 'none';
 
 // =====================sửa nút điều hướng banner ===================///
 var iconBannerL = document.querySelector('.iconBannerL');
