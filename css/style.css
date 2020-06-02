@@ -1250,6 +1250,7 @@ p {
         margin-left: 8px;
         min-height: 350px;
     }
+
     .mt-0 {
         margin-top: 0;
     }
@@ -2368,4 +2369,8 @@ h2.title {
 
 .swiper-container-tablet {
     display: none;
+}
+
+.content-text span {
+    font-size: 14pt;
 }
