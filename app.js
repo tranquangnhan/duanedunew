@@ -341,8 +341,6 @@ function tabletsl() {
             i = 0;
         } else {
             tSlide2.style.transition = '.6s';
-            console.log(x);
-            console.log(screen.width);
             tSlide2.style.transform = "translateX(-" + x + "%)";
             x += 50 + 2.7;
         }
@@ -374,8 +372,6 @@ function desktopsl() {
             i = 0;
         } else {
             bSlide2.style.transition = '.6s';
-            console.log(x);
-            console.log(screen.width);
             bSlide2.style.transform = "translateX(-" + x + "%)";
             x += 100 / 3 + 1;
         }

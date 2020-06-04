@@ -2371,3 +2371,7 @@ h2.title {
 .content-text span {
     font-size: 14pt;
 }
+
+.opened {
+    transform: rotate(90deg);
+}

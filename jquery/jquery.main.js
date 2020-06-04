@@ -6,7 +6,11 @@ for (let i = 0; i < qltitle.length; i++) {
     $(qltitle[i]).click(function (e) { 
         e.preventDefault();
         $(qlcontent[i]).slideToggle();
+        //class opened cho phép xoay icon
+        $(icon[i]).toggleClass('opened');
+        //Slide up và xóa class các anh em của nó
         $(qlcontent[i]).parent().siblings().children(".quyenloi-xemthem").slideUp();
+        $(qlcontent[i]).parent().siblings().find('.fa-angle-right').removeClass('opened');
         icon[i].style.transition = "0.4s";
     });
     
@@ -21,7 +25,6 @@ for (let i = 0; i < question.length; i++) {
         $(anwser[i]).slideToggle();
         //Chọn các phần tử anh em của nó và cho ẩn đi
         $(anwser[i]).parent().siblings().children(".boxtext-faq").slideUp();
-        console.log();
     });
 }
 
