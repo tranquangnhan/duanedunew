@@ -76,7 +76,7 @@ function offnav() {
 
 // navbar
 
-// code slideTogger
+// code slideTogger//
 
 
 var boxsd1 = document.querySelectorAll(".box-sd1");
