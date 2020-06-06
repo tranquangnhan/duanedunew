@@ -21,13 +21,13 @@
         <div class="navbar__icon" id="navbaric">
             <i class="fa fa-navicon"></i>
         </div>
-        <div class="navbar__mobile" id="navbarmb">
+        <div class="navbar__mobile" id="navbarmb" id="trangchu2">
             <ul>
                 <div id="navmb__off"><i class="fa fa-times"></i></div>
-                <li onclick="hidenav()"><a href="#home">Trang chủ</a></li>
+                <li onclick="hidenav()"><a href="#trangchu2">Trang chủ</a></li>
                 <li onclick="hidenav()"><a href="#vechungtoi2">Về Chúng Tôi</a></li>
-                <li onclick="hidenav()"><a href="#xemthem2">Đăng ký Dạy</a></li>
-                <li onclick="hidenav()"><a href="#searchteacher">Tìm Gia Sư</a></li>
+                <li onclick="hidenav()"><a href="#dangkyday2">Đăng ký Dạy</a></li>
+                <li onclick="hidenav()"><a href="#timgiasu2">Tìm Gia Sư</a></li>
                 <li id="clickxemthemmb">Xem Thêm <i class="fa fa-angle-down" style="font-size:16px"></i>
                     <ul class="navmb__xemthem">
                         <li><a href="https://www.facebook.com/digedu.vn/">Cộng đồng</a>
@@ -40,7 +40,7 @@
                     </li>
             </ul>
         </div>
-        <div class="slide">
+        <div class="slide" id="trangchu">
             <div class="rgba"></div>
             <div class="dieuhuong">
                 <i class="fa fa-chevron-left iconBannerL" style="font-size:36px" onclick="lui()"></i>
@@ -122,29 +122,31 @@
             </div>
             <div class="rgba"></div>
         </div>
-        <div class="boxcontentbn" id="home">
+        <div class="boxcontentbn">
             <div id="bg__banner">
                 <div class="boxcenter">
                     <div class="logo">
                         <img src="images/logo.png" alt="">
                     </div>
-                    <div class="menu">
-                        <ul id="menuActive">
-                            <li><a href="#home" class=" active2">Trang chủ</a></li>
-                            <li><a href="#vechungtoi">Về chúng tôi</a></li>
-                            <li><a href="#xemthem">Đăng ký dạy</a></li>
-                            <li><a href="#searchteacher">Tìm gia sư</a></li>
-                            <li> Xem thêm <i class="fa fa-angle-down" style="font-size:23px"></i>
-                                <ul>
-                                    <li><a href="https://www.facebook.com/digedu.vn/">Cộng đồng</a>
-                                        <li><a href="./chinh-sach/index.html">Chính sách sử dụng</a>
-                                            <li><a href="#question">Câu hỏi thường gặp</a>
-                                                <li><a href="./huong-dan/index.html">Hướng dẫn sử dụng</a>
-                                                    <li><a href="https://www.facebook.com/digedu.affiliate/">DigEdu Affiliate</a>
-                                                        <li><a href="#contact">Liên hệ</a>
-                                </ul>
-                                </li>
-                        </ul>
+                    <div class="m1 menu">
+                        <div class="menu" id="menu-center">
+                            <ul id="menuActive">
+                                <li><a href="#trangchu" class="active2">Trang chủ</a></li>
+                                <li><a href="#chungtoi">Về chúng tôi</a></li>
+                                <li><a href="#dangkyday">Đăng ký dạy</a></li>
+                                <li><a href="#timgiasu">Tìm gia sư</a></li>
+                                <li> Xem thêm <i class="fa fa-angle-down" style="font-size:23px"></i>
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/digedu.vn/">Cộng đồng</a>
+                                            <li><a href="./chinh-sach/index.html">Chính sách sử dụng</a>
+                                                <li><a href="#question">Câu hỏi thường gặp</a>
+                                                    <li><a href="./huong-dan/index.html">Hướng dẫn sử dụng</a>
+                                                        <li><a href="https://www.facebook.com/digedu.affiliate/">DigEdu Affiliate</a>
+                                                            <li><a href="#contact">Liên hệ</a>
+                                    </ul>
+                                    </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -203,7 +205,7 @@
     </div>
     </div>
     <div class="row">
-        <div class="uudiem__box">
+        <div class="uudiem__box" id="chungtoi">
             <div class="boxcenter">
                 <h2 class="title">Ưu điểm tìm kiếm gia sư tại DigEdu</h2>
                 <div class="swiper-container">
@@ -234,7 +236,7 @@
                                     <img src="images/icon/teacher.svg" alt="">
                                 </div>
                                 <div class="review_user_content">
-                                    <div class="review_user_name" id="vechungtoi"><span>Tìm kiếm gia sư chất lượng</span></div>
+                                    <div class="review_user_name"><span>Tìm kiếm gia sư chất lượng</span></div>
                                 </div>
                             </div>
                         </div>
@@ -360,13 +362,8 @@
                                 </div>
                                 <div class="content-text cttext1">
                                     <h3>Tầm nhìn</h3>
-                                    <p>Với tham vọng tạo ra một môi trường
-                                        học tập thân thiện, cung cấp đầy đủ
-                                        giải pháp giáo dục cho bạn, với sự tin
-                                        cậy, uy tín và chất lượng, DigEdu sẽ nỗ
-                                        lực phấn đấu trở thành một trong những
-                                        công ty đi đầu trong việc cung cấp giải
-                                        pháp giáo dục tốt nhất cho bạn!
+                                    <p>Với tham vọng tạo ra một môi trường học tập thân thiện, cung cấp đầy đủ giải pháp giáo dục cho bạn, với sự tin cậy, uy tín và chất lượng, DigEdu sẽ nỗ lực phấn đấu trở thành một trong những công ty đi đầu trong việc
+                                        cung cấp giải pháp giáo dục tốt nhất cho bạn!
                                     </p>
 
                                 </div>
@@ -401,7 +398,7 @@
                                     <img class="icon__item3" src="images/icon/camket.svg" alt="">
                                 </div>
                                 <div class="content-text  cttext1">
-                                    <h3 class="camket">Cam kết</h3>
+                                    <h3 class="camket" id="dangkyday2">Cam kết</h3>
                                     <ul>
                                         <li><span>Đơn giản:</span> Chúng tôi hướng đến sẽ giải quyết mọi nhu cầu của khách hàng chỉ bằng một chiếc Smart phone.
                                         </li>
@@ -428,23 +425,21 @@
 
     <!-- TEACHER START -->
 
-    <div class="student row student1" id="xemthem2">
-
+    <div class="student row student1">
         <div class="boxcenter student__content">
             <div class="col-7 col-sm-6 mr">
-                <div class="text-teacher cl-b">
+                <div class="text-teacher cl-b" id="dangkyday">
                     <h2>ĐĂNG KÝ <br> TRỞ THÀNH GIA SƯ</h2>
                     <div class="gach"></div>
                     <div class="quyenloi">
                         <p>Dù bạn là ai? Bạn muốn trở thành gia sư để tăng thu nhập?
-                          </p>
+                        </p>
                         <p>Hãy để chúng tôi giúp bạn, tại sao bạn phải đăng ký làm gia sư ngay:</p>
                         <div class="quyenloi-check">
                             <div class="quyenloi__title"><span><i class="fa fa-angle-right"
                                     style="font-size:20px"></i></span>Chúng tôi sẽ chủ động gửi thông báo cho bạn</div>
                             <div class="quyenloi-xemthem">
-                                <div><i class="fa fa-check" style="font-size:15px"></i>Hệ thống sẽ chủ động thông báo đến bạn lớp phù hợp hoặc lời
-                                    mời trực tiếp trong khoảng cách gần nhất</div>
+                                <div><i class="fa fa-check" style="font-size:15px"></i>Hệ thống sẽ chủ động thông báo đến bạn lớp phù hợp hoặc lời mời trực tiếp trong khoảng cách gần nhất</div>
                                 <div><i class="fa fa-check" style="font-size:15px"></i>Bạn có thể xem chi tiết lớp học trước khi nhận lớp</div>
                             </div>
                         </div>
@@ -480,8 +475,7 @@
                             <div class="quyenloi__title"><span><i class="fa fa-angle-right"
                             style="font-size:20px"></i></span>Đánh giá chất lượng công khai</div>
                             <div class="quyenloi-xemthem">
-                                <div><i class="fa fa-check" style="font-size:15px"></i>Khi bạn hoàn thành lớp dạy xuất sắc sẽ nhận được đánh giá tốt
-                                    từ học viên thông qua sao và bình luận.
+                                <div><i class="fa fa-check" style="font-size:15px"></i>Khi bạn hoàn thành lớp dạy xuất sắc sẽ nhận được đánh giá tốt từ học viên thông qua sao và bình luận.
                                 </div>
                             </div>
                         </div>
@@ -495,13 +489,13 @@
         </div>
     </div>
     <!-- TEACHER END -->
-    <div class="student row student2" id="searchteacher">
+    <div class="student row student2" id="timgiasu2">
         <div class="boxcenter student__content">
             <div class="col-5 col-sm-6 student__img mr">
                 <img src="images/minhhoa/student.svg" alt="">
             </div>
             <div class="col-7 col-sm-6">
-                <div class="text-teacher cl-b">
+                <div class="text-teacher cl-b" id="timgiasu">
                     <h2>HỌC VIÊN TÌM GIA SƯ</h2>
                     <div class="gach"></div>
                     <div class="quyenloi">
@@ -510,9 +504,8 @@
                             <div class="quyenloi__title"><span><i class="fa fa-angle-right"
                                         style="font-size:20px"></i></span>Nhanh chóng, tiện lợi</div>
                             <div class="quyenloi-xemthem">
-                                <div><i class="fa fa-check" style="font-size:15px"></i>Cài đặt App tìm gia sư DigEdu, bạn có thể chủ động tìm gia sư phù
-                                    hợp với yêu cầu
-                                    </div>
+                                <div><i class="fa fa-check" style="font-size:15px"></i>Cài đặt App tìm gia sư DigEdu, bạn có thể chủ động tìm gia sư phù hợp với yêu cầu
+                                </div>
                                 <div><i class="fa fa-check" style="font-size:15px"></i>Tạo yêu cầu tìm gia sư mọi luc, mọi nơi</div>
                             </div>
                         </div>
@@ -521,7 +514,7 @@
                                         style="font-size:20px"></i></span>Thông tin chi tiết, đánh giá khách quan</div>
                             <div class="quyenloi-xemthem">
                                 <div><i class="fa fa-check" style="font-size:15px"></i>Nhìn thấy tất cả mọi thông tin gia sư
-                                   </div>
+                                </div>
                                 <div><i class="fa fa-check" style="font-size:15px"></i> Xem các đánh giá, bình luận của học viên công khai
                                 </div>
                             </div>
@@ -530,8 +523,7 @@
                             <div class="quyenloi__title"><span><i class="fa fa-angle-right"
                                         style="font-size:20px"></i></span>Chủ động kiểm soát học phí và chất lượng</div>
                             <div class="quyenloi-xemthem">
-                                <div><i class="fa fa-check" style="font-size:15px"></i>Gửi lời mời dạy trực tiếp đến gia sư được đánh giá tốt
-                                    Học phí do hệ thống đề xuất hoặc do học viên tự chọn</div>
+                                <div><i class="fa fa-check" style="font-size:15px"></i>Gửi lời mời dạy trực tiếp đến gia sư được đánh giá tốt Học phí do hệ thống đề xuất hoặc do học viên tự chọn</div>
                                 <div><i class="fa fa-check" style="font-size:15px"></i>Học phí do hệ thống đề xuất hoặc do học viên tự chọn</div>
                             </div>
                         </div>
@@ -540,7 +532,7 @@
                                         style="font-size:20px"></i></span>Nhiều ưu đãi hấp dẫn</div>
                             <div class="quyenloi-xemthem">
                                 <div><i class="fa fa-check" style="font-size:15px"></i>Nhận được nhiều ưu đãi hấp dẫn
-                                    </div>
+                                </div>
                                 <div><i class="fa fa-check" style="font-size:15px"></i>Giải đáp mọi thắc mắc 24/7
                                 </div>
                             </div>
@@ -550,7 +542,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div class="row ">
         <div class="blue class ">
@@ -558,21 +549,21 @@
                 <div class="col-4 mr class__item wheel-testimonial-item">
                     <div class="icon-blue ">
                         <img src="images/icon/giaovienday.png" alt="">
-                        <span data-to="1250" data-speed="10000"></span>+
+                        <span data-to="1250" data-speed="2000"></span>+
                         <p> Lớp học</p>
                     </div>
                 </div>
                 <div class="col-4 mr class__item wheel-testimonial-item">
                     <div class="icon-blue ">
                         <img src="images/icon/mugiasu.png" alt="">
-                        <span data-to="923" data-speed="12000"></span>+
+                        <span data-to="923" data-speed="3000"></span>+
                         <p> Gia sư</p>
                     </div>
                 </div>
                 <div class="col-4 class__item wheel-testimonial-item">
                     <div class="icon-blue">
                         <img src="images/icon/hocsinh.png" alt="">
-                        <span data-to="3295" data-speed="9000"></span>+
+                        <span data-to="3295" data-speed="2500"></span>+
                         <p> Truy cập</p>
                     </div>
                 </div>
@@ -595,8 +586,7 @@
                         </div>
                         <div class="boxtext-faq">
                             <div class="goc"></div>
-                            <p> Nếu được xác nhận từ phía học viên không đồng ý học, công ty chúng tôi sẽ hoàn tiền vào ví cho gia sư trong vòng tối
-                                đa 24h.
+                            <p> Nếu được xác nhận từ phía học viên không đồng ý học, công ty chúng tôi sẽ hoàn tiền vào ví cho gia sư trong vòng tối đa 24h.
                             </p>
                         </div>
                     </div>
@@ -607,8 +597,7 @@
                         </div>
                         <div class="boxtext-faq">
                             <div class="goc"></div>
-                            <p> Bạn phải cung cấp đầy đủ các thông tin ở mục khai báo thông tin. Nếu hồ sơ của gia sư có thêm những hình ảnh, video
-                                giới thiệu thì càng được đánh giá cao.
+                            <p> Bạn phải cung cấp đầy đủ các thông tin ở mục khai báo thông tin. Nếu hồ sơ của gia sư có thêm những hình ảnh, video giới thiệu thì càng được đánh giá cao.
                             </p>
                         </div>
                     </div>
@@ -622,9 +611,7 @@
                             <div class="goc"></div>
                             <ul>
                                 <li>
-                                    <p>Hồ sơ hoàn tất, có video hoặc hình ảnh giới thiệu về bản thân.
-                                        
-                                        Dạy tốt các lớp đã nhận, đạo đức tốt, có tâm huyết</p>
+                                    <p>Hồ sơ hoàn tất, có video hoặc hình ảnh giới thiệu về bản thân. Dạy tốt các lớp đã nhận, đạo đức tốt, có tâm huyết</p>
                                 </li>
                                 <li>
                                     <p>Dạy tốt các lớp đã nhận, đạo đức tốt, có tâm huyết
@@ -708,8 +695,7 @@
                         </div>
                         <div class="boxtext-faq">
                             <div class="goc"></div>
-                            <p>Đội ngũ gia sư được đào tạo, thông tin của gia sư đư
-                                minh nhân dân cho học viên khi đến nhận lớp.</p>
+                            <p>Đội ngũ gia sư được đào tạo, thông tin của gia sư đư minh nhân dân cho học viên khi đến nhận lớp.</p>
                         </div>
                     </div>
                     <div class="faq__text-item">
@@ -1061,7 +1047,7 @@
     </div>
     <div class="go-to-top" id="gototopid">go to top</div>
     <div class="row foot-end">
-        <p>© Copyright DigEdu. All Rights Reserved.</p>
+        <p>Liên hệ</p>
     </div>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="app.js"></script>
