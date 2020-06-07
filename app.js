@@ -104,7 +104,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             boxsd1[i].style.height = "545px";
             //sửa thành 535px
             contenttext1[i].style.minHeight = "100%";
-            content.style.minHeight = '1000px';
+            content.style.minHeight = '1000px'; //sua lai 1000
             btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
             btnxemthem1[i].style.right = '41%';
             // laptop
