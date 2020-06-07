@@ -440,7 +440,6 @@ p {
 
 .menu ul li ul li a {
     margin: 0 15px;
-    transition: 0.5s;
 }
 
 .menu i {
@@ -575,7 +574,7 @@ p {
 .content {
     float: left;
     background-image: url("../images/background2.png");
-    min-height: 985px;
+    min-height: 835px;
     background-repeat: repeat;
     position: relative;
     transition: 0.5s;
@@ -661,7 +660,7 @@ p {
 
 .content__parent-about .content-text {
     position: relative;
-    max-height: 156px;
+    max-height: 200px;
     overflow: hidden;
 }
 
@@ -809,6 +808,7 @@ p {
     transition: all 0.5s;
     font-family: Androgyne;
     color: black;
+    cursor: pointer;
 }
 
 .btn-dk:hover {
@@ -1236,7 +1236,7 @@ p {
         left: unset;
     }
     .content {
-        min-height: 985px;
+        min-height: 800px;
     }
     .content__parent-about .content-text ul {
         margin-bottom: 10px;
