@@ -86,7 +86,7 @@ var contenttext2 = document.querySelector("#cttext2");
 var btnxemthem1 = document.querySelectorAll('.xemthem');
 
 //lấy content parent bên mobile
-var contentParent = document.querySelectorAll('.content-parent');
+// var contentParent = document.querySelectorAll('.content-parent');
 
 for (let i = 0; i < btnxemthem1.length; i++) {
     btnxemthem1[i].addEventListener("click", slidedown1);
@@ -100,7 +100,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             boxsd1[i].style.height = "545px";
             //sửa thành 535px
             contenttext1[i].style.minHeight = "100%";
-            content.style.minHeight = '1185px';
+            // content.style.minHeight = '1185px';
             btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
             btnxemthem1[i].style.right = '41%';
             // laptop
@@ -116,16 +116,16 @@ for (let i = 0; i < btnxemthem1.length; i++) {
                 content.style.minHeight = '2785px';
                 btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
                 btnxemthem1[i].style.right = '41%';
-                contentParent[i].style.minHeight = '850px';
+                // contentParent[i].style.minHeight = '850px';
                 // click vào thu nhỏ box contentParent thu lại
                 var thuNho = document.querySelector('.thunho');
-                thuNho.addEventListener('click', thuContentParent);
+                // thuNho.addEventListener('click', thuContentParent);
 
-                function thuContentParent() {
-                    for (let i = 0; i < contentParent.length; i++) {
-                        contentParent[i].style.minHeight = '625px';
-                    }
-                }
+                // function thuContentParent() {
+                //     for (let i = 0; i < contentParent.length; i++) {
+                //         contentParent[i].style.minHeight = '625px';
+                //     }
+                // }
                 // click vào thu nhỏ box contentParent thu lại
             }
             //end điện thoại
@@ -141,7 +141,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
             btnxemthem1[i].style.right = '41%';
             if (boxsd1[0].style.height === '350px' && boxsd1[1].style.height === '350px' && boxsd1[2].style.height === '350px') {
-                content.style.minHeight = '985px';
+                // content.style.minHeight = '985px';
             }
             boxsd1[i].style.height = "350px";
             //sửa chữ xem thêm
