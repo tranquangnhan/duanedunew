@@ -86,7 +86,7 @@ var contenttext2 = document.querySelector("#cttext2");
 var btnxemthem1 = document.querySelectorAll('.xemthem');
 
 //lấy content parent bên mobile
-// var contentParent = document.querySelectorAll('.content-parent');
+var contentParent = document.querySelectorAll('.content-parent');
 
 for (let i = 0; i < btnxemthem1.length; i++) {
     btnxemthem1[i].addEventListener("click", slidedown1);
@@ -95,12 +95,16 @@ for (let i = 0; i < btnxemthem1.length; i++) {
         if (
             boxsd1[i].clientHeight == 350
         ) {
+            // var thuNho1 = document.querySelectorAll('.thunho');
+            // if(!thuNho1){
+
+            // }
 
             // màn hình lap top
             boxsd1[i].style.height = "545px";
             //sửa thành 535px
             contenttext1[i].style.minHeight = "100%";
-            // content.style.minHeight = '1185px';
+            content.style.minHeight = '1000px'; //sua lai 1000
             btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
             btnxemthem1[i].style.right = '41%';
             // laptop
@@ -113,26 +117,36 @@ for (let i = 0; i < btnxemthem1.length; i++) {
                 }
                 boxsd1[i].style.height = "620px";
                 //sửa chữ xem thêm
-                content.style.minHeight = '2785px';
+                content.style.minHeight = '2050px';
                 btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
                 btnxemthem1[i].style.right = '41%';
-                // contentParent[i].style.minHeight = '850px';
+                contentParent[i].style.minHeight = '850px';
                 // click vào thu nhỏ box contentParent thu lại
-                var thuNho = document.querySelector('.thunho');
-                // thuNho.addEventListener('click', thuContentParent);
+                var thuNho2 = document.querySelectorAll('.thunho');
+                for (let i = 0; i < thuNho2.length; i++) {
+                    thuNho2[i].addEventListener('click', setHeightContentParent);
 
-                // function thuContentParent() {
-                //     for (let i = 0; i < contentParent.length; i++) {
-                //         contentParent[i].style.minHeight = '625px';
-                //     }
-                // }
+                    function setHeightContentParent() {
+                        if (!thuNho2[i]) {
+                            contentParent[0].style.minHeight = '650px';
+                            contentParent[1].style.minHeight = '650px';
+                            contentParent[2].style.minHeight = '650px';
+                        }
+                        contentParent[0].style.minHeight = '650px';
+                        contentParent[1].style.minHeight = '650px';
+                        contentParent[2].style.minHeight = '650px';
+
+                    }
+
+                }
+
                 // click vào thu nhỏ box contentParent thu lại
             }
             //end điện thoại
             // start ipad
             if (body.clientWidth > 740 && body.clientWidth < 1024) {
                 boxsd1[i].style.height = "800px";
-                content.style.minHeight = '1425px';
+                content.style.minHeight = '1250px';
             }
             //end ipad
         } else {
@@ -140,9 +154,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             contenttext1[i].style.minHeight = "156px";
             btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
             btnxemthem1[i].style.right = '41%';
-            if (boxsd1[0].style.height === '350px' && boxsd1[1].style.height === '350px' && boxsd1[2].style.height === '350px') {
-                // content.style.minHeight = '985px';
-            }
+            content.style.minHeight = '835px';
             boxsd1[i].style.height = "350px";
             //sửa chữ xem thêm
             btnxemthem1[i].innerHTML = 'Xem Thêm';
@@ -211,11 +223,18 @@ function anboxshadow() {
             contenttext1[i].style.minHeight = "156px";
             btnxemthem1[i].innerHTML = 'Xem Thêm';
             btnxemthem1[i].style.right = '10px';
-            if (boxsd1[0].style.height === '350px' && boxsd1[1].style.height === '350px' && boxsd1[2].style.height === '350px') {
-                content.style.minHeight = '985px';
+            var thuNho1 = document.querySelector('.thunho');
+            if (!thuNho1) {
+                content.style.minHeight = '835px';
+            } else {
+                content.style.minHeight = '1185px';
             }
         }
-
+        // điện thoại
+        if (body.clientWidth < 740) {
+            setHeightContentParent();
+        }
+        // điện thoại
     }
 
 }

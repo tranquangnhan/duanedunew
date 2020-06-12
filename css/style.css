@@ -440,7 +440,6 @@ p {
 
 .menu ul li ul li a {
     margin: 0 15px;
-    transition: 0.5s;
 }
 
 .menu i {
@@ -659,7 +658,7 @@ p {
 
 .content__parent-about .content-text {
     position: relative;
-    max-height: 156px;
+    max-height: 200px;
     overflow: hidden;
 }
 
@@ -807,6 +806,7 @@ p {
     transition: all 0.5s;
     font-family: Androgyne;
     color: black;
+    cursor: pointer;
 }
 
 .btn-dk:hover {
@@ -1234,7 +1234,7 @@ p {
         left: unset;
     }
     .content {
-        min-height: 985px;
+        min-height: 800px;
     }
     .content__parent-about .content-text ul {
         margin-bottom: 10px;
@@ -1717,9 +1717,9 @@ p {
         font-size: 18px !important;
     }
     /* end-faq */
-    /* box ưu đãi */
+    /* =========box ưu đãi==============  */
     .uudai {
-        min-height: 582px;
+        min-height: 425px;
         background-size: 138% 100%;
     }
     .uudai .uudai__boxbtn {
