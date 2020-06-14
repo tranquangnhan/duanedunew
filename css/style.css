@@ -1471,6 +1471,14 @@ p {
     .swiper-container {
         display: none;
     }
+
+    .box .db {
+        display: unset !important;
+     }
+     
+     .box .db2 {
+         padding-left: 0px !important;
+     }
 }
 
 
@@ -2011,6 +2019,15 @@ h2.title {
     font-family: Avo;
     margin: 0;
     width: 320px;
+}
+
+.box .db {
+   display: flex;
+   justify-content: center;
+}
+
+.box .db2 {
+    padding-left: 30px;
 }
 
 .huongdan p.step1 {
