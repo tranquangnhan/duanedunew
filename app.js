@@ -11,7 +11,7 @@ function tiep() {
     if (chuyen < max) {
         chuyen += kichthuoc;
     } else chuyen = 0;
-    chuyenSlide.style.marginLeft = "-" + chuyen + "px";
+    chuyenSlide.style.transform = 'translateX(' + "-" + chuyen + "px)"
 }
 
 function lui() {
@@ -20,7 +20,7 @@ function lui() {
     } else {
         chuyen -= kichthuoc;
     }
-    chuyenSlide.style.marginLeft = "-" + chuyen + "px";
+    chuyenSlide.style.transform = 'translateX(' + "-" + chuyen + "px)"
 }
 setInterval("tiep()", 5000);
 

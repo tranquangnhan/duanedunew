@@ -124,6 +124,10 @@ p {
     transition: all 0.8s;
 }
 
+.chuyen-slide__boximg-item {
+    position: relative;
+}
+
 .chuyen-slide__boximg-item img {
     width: 100%;
     height: 855px;
