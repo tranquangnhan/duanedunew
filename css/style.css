@@ -460,7 +460,7 @@ p {
 .bg__banner2 {
     background-color: #3a1b0a;
     position: fixed;
-    z-index: 999999;
+    z-index: 999999999999999;
     transition: 1s ease;
     display: block;
     height: 100px;
@@ -475,7 +475,7 @@ p {
     height: 50px;
     background-color: rgba(0, 0, 0, 0);
     position: fixed;
-    z-index: 999999;
+    z-index: 999999999999999;
     padding: 0px 0;
     display: block;
     transition: 0.5s ease;
@@ -620,7 +620,7 @@ p {
     background-color: rgb(255, 255, 255, 0.3);
     display: block;
     overflow: hidden;
-    transform: translatey(-30%);
+    transform: translateY(-30%);
     transition: 0.5s;
 }
 
@@ -720,7 +720,7 @@ p {
 }
 
 .student img {
-    padding-top: 80px;
+    padding-top: 102px;
 }
 
 .student .student__img img {
@@ -751,6 +751,7 @@ p {
 .text-teacher h2 {
     line-height: 50px;
     margin-bottom: 5px;
+    margin-top: 5rem;
 }
 
 .quyenloi-check {
@@ -811,6 +812,10 @@ p {
     font-family: Androgyne;
     color: black;
     cursor: pointer;
+}
+
+.btn-dk a {
+    color: black;
 }
 
 .btn-dk:hover {
@@ -1023,7 +1028,11 @@ p {
 
 .uudai__boxbtn .btn-dk a {
     padding: 10px 20px;
-    color: black;
+    color: black !important;
+}
+
+.uudai__boxbtn .btn-dk a:hover {
+    color: white !important;
 }
 
 .btn-pd {
@@ -1475,14 +1484,12 @@ p {
     .swiper-container {
         display: none;
     }
-
     .box .db {
         display: unset !important;
-     }
-     
-     .box .db2 {
-         padding-left: 0px !important;
-     }
+    }
+    .box .db2 {
+        padding-left: 0px !important;
+    }
 }
 
 
@@ -1518,7 +1525,7 @@ p {
         width: 90%;
         height: 50%;
         padding-top: 0;
-        z-index: 2;
+        z-index: 1;
         transform: unset;
     }
     .text-banner .btn-dk {
@@ -1571,10 +1578,10 @@ p {
     }
     .navbar__mobile ul {
         list-style: none;
-        padding: 20px 0 0 0;
+        padding: 0;
     }
     .navbar__mobile ul li {
-        padding: 15px 15px;
+        padding: 10px 15px;
         color: black;
         font-weight: bold;
     }
@@ -1617,14 +1624,16 @@ p {
     .logo {
         height: 70px;
     }
-    .logo img { 
+    .logo img {
         transform: scale(0.8);
         margin-top: 14px;
     }
     .bg__banner2,
     .bg__banner {
         height: 80px;
-        z-index: 999999999999999999;
+        z-index: 9999999999999999999999;
+        background-color: #3a1b0a;
+        margin: 0;
     }
     .content .abu {
         width: 80%;
@@ -1818,7 +1827,6 @@ p {
     #hocvienn .boxcenter {
         flex-direction: column !important;
     }
-
     .huongdan_page4 p {
         margin-bottom: 20px !important;
     }
@@ -1873,12 +1881,11 @@ p {
     .slideshow-container {
         margin-top: 80px;
     }
-    .bg__banner {
+    /* .bg__banner {
         margin: 0;
         height: 80px;
         background-color: #3a1b0a;
-        display: none;
-    }
+    } */
     .uudiem__box {
         display: none;
     }
@@ -2026,8 +2033,8 @@ h2.title {
 }
 
 .box .db {
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .box .db2 {

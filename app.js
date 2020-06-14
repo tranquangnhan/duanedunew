@@ -321,14 +321,14 @@ if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
 
 //======================menu active ================================//
 
-var btns = document.querySelectorAll('#menuActive li a');
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active2");
-        current[0].className = current[0].className.replace(" active2", "");
-        this.className += " active2";
-    });
-}
+// var btns = document.querySelectorAll('#menuActive li a');
+// for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function() {
+//         var current = document.getElementsByClassName("active2");
+//         current[0].className = current[0].className.replace(" active2", "");
+//         this.className += " active2";
+//     });
+// }
 
 //======================menu active ================================//
 // menu xem them
@@ -344,7 +344,7 @@ function hienxemthem() {
         menuxemthem.style.display = 'block';
     }
 }
-
+// menu xem them
 //slide tablet
 function tabletsl() {
     var tcham = document.getElementsByClassName('tdot');
