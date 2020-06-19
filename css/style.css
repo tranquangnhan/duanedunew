@@ -620,7 +620,7 @@ p {
     background-color: rgb(255, 255, 255, 0.3);
     display: block;
     overflow: hidden;
-    transform: translateY(-30%);
+    transform: translateY(-100px);
     transition: 0.5s;
 }
 
@@ -1661,6 +1661,7 @@ p {
     .content__parent-about .content-shadow {
         display: block;
         margin-left: 12px;
+        width: 93% !important;
     }
     /* btn thu nho */
     .student {

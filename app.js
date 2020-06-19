@@ -115,7 +115,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
                     boxsd1[1].style.height = "605px"; //sua lai thanh 605px
                     //sửa lỗi màn
                 }
-                boxsd1[i].style.height = "620px";
+                boxsd1[i].style.height = "645px";
                 //sửa chữ xem thêm
                 content.style.minHeight = '2050px';
                 btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
@@ -139,7 +139,22 @@ for (let i = 0; i < btnxemthem1.length; i++) {
                     }
 
                 }
+                for (let i = 0; i < btnxemthem1.length; i++) {
+                    btnxemthem1[i].addEventListener('click', setHeightContentParent);
 
+                    function setHeightContentParent() {
+                        if (!btnxemthem1[i]) {
+                            contentParent[0].style.minHeight = '650px';
+                            contentParent[1].style.minHeight = '650px';
+                            contentParent[2].style.minHeight = '650px';
+                        }
+                        contentParent[0].style.minHeight = '650px';
+                        contentParent[1].style.minHeight = '650px';
+                        contentParent[2].style.minHeight = '650px';
+
+                    }
+
+                }
                 // click vào thu nhỏ box contentParent thu lại
             }
             //end điện thoại
@@ -214,31 +229,57 @@ function offboxshadow2() {
 //==============sửa content shadow =======================//
 
 // ==================== click vào content ẩn các box shadow ======================//
-content.addEventListener('click', anboxshadow);
 
-function anboxshadow() {
-    for (let i = 0; i < boxsd1.length; i++) {
-        if (boxcontentshadow[i].clientHeight > 350) {
-            boxsd1[i].style.height = "350px";
-            contenttext1[i].style.minHeight = "156px";
-            btnxemthem1[i].innerHTML = 'Xem Thêm';
-            btnxemthem1[i].style.right = '10px';
-            var thuNho1 = document.querySelector('.thunho');
-            if (!thuNho1) {
-                content.style.minHeight = '835px';
-            } else {
-                content.style.minHeight = '1185px';
+
+if (body.clientWidth > 1023) {
+    content.addEventListener('click', anboxshadow);
+
+    function anboxshadow() {
+        for (let i = 0; i < boxsd1.length; i++) {
+            if (boxcontentshadow[i].clientHeight > 350) {
+                boxsd1[i].style.height = "350px";
+                contenttext1[i].style.minHeight = "156px";
+                btnxemthem1[i].innerHTML = 'Xem Thêm';
+                btnxemthem1[i].style.right = '10px';
+                var thuNho1 = document.querySelector('.thunho');
+                if (!thuNho1) {
+                    content.style.minHeight = '835px';
+                } else {
+                    content.style.minHeight = '1185px';
+                }
+            }
+            // điện thoại
+            if (body.clientWidth < 740) {
+                setHeightContentParent();
+            }
+            // điện thoại
+        }
+
+    }
+}
+// thu nhỏ box shadow của điện thoại
+
+if (body.clientWidth < 1024 && body.clientWidth > 739) {
+    content.addEventListener('click', anboxshadow);
+
+    function anboxshadow() {
+
+        for (let i = 0; i < boxsd1.length; i++) {
+            if (boxcontentshadow[i].clientHeight > 350) {
+                boxsd1[i].style.height = "350px";
+                contenttext1[i].style.minHeight = "156px";
+                btnxemthem1[i].innerHTML = 'Xem Thêm';
+                btnxemthem1[i].style.right = '10px';
+                var thuNho1 = document.querySelector('.thunho');
+                if (!thuNho1) {
+                    content.style.minHeight = '835px';
+                } else {
+                    content.style.minHeight = '1185px';
+                }
             }
         }
-        // điện thoại
-        if (body.clientWidth < 740) {
-            setHeightContentParent();
-        }
-        // điện thoại
     }
-
 }
-
 
 
 // Phúc Bình JS
