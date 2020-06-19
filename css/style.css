@@ -613,14 +613,19 @@ p {
 
 .content-shadow {
     width: 90% !important;
+    position: absolute;
     margin-left: 19px;
+    top: 200px;
     border-radius: 20px;
     box-shadow: 0px 6px 8px #999;
     height: 350px;
     background-color: rgb(255, 255, 255, 0.3);
     display: block;
     overflow: hidden;
+<<<<<<< HEAD
     transform: translateY(-100px);
+=======
+>>>>>>> 5c1c9217f19e2cea4be7acd2706611c7dcda84a5
     transition: 0.5s;
 }
 
