@@ -1498,6 +1498,32 @@ p {
     .box .db2 {
         padding-left: 0px !important;
     }
+
+    .footer__social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social__icon {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;    
+    }
+
+    .footer__social .googleplay, .footer__social .appstore {
+        transform: translateY(0) !important;
+        padding-right: 0;
+    }
+
+    .social__list-img {
+        width: 100% !important;
+    }
+
+    .social__list-img img {
+        width: 48% !important;
+        margin-right: 0 !important;
+    }
 }
 
 
@@ -1897,6 +1923,32 @@ p {
     } */
     .uudiem__box {
         display: none;
+    }
+
+    .footer__social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social__icon {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;    
+    }
+
+    .footer__social .googleplay, .footer__social .appstore {
+        transform: translateY(0) !important;
+        padding-right: 0;
+    }
+
+    .social__list-img {
+        width: 100% !important;
+    }
+
+    .social__list-img img {
+        width: 48% !important;
+        margin-right: 0 !important;
     }
 }
 
