@@ -1149,6 +1149,14 @@ p {
     margin-right: 2%;
 }
 
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
 .mt-3 {
     margin-top: 3rem;
 }
@@ -2358,6 +2366,26 @@ h2.title {
     width: 40px;
     float: left;
     margin-right: 10px;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__social .social__icon {
+    width: 60%;
+}
+
+.footer__social .social__list-img {
+    width: 40%;
+}
+
+.footer__social .googleplay,
+.footer__social .appstore {
+    width: 100%;
+    margin-top: 0;
+    transform: translateY(-60px);
+    padding-right: 1rem;
 }
 
 .footer__social img {
