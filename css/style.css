@@ -968,11 +968,11 @@ p {
     background-image: url(../images/giaovien-bg.png);
     text-align: center;
     min-height: 530px;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     position: relative;
     text-align: center;
-    background-size: cover;
+    background-size: cover !important;
     background-position: center;
 }
 
@@ -1242,7 +1242,7 @@ p {
 
 /* tablet  */
 
-@media only screen and (min-width: 740px) and (max-width: 1023px) {
+@media only screen and (min-width: 740px) and (max-width: 1025px) {
     .slide {
         width: 100% !important;
     }
@@ -1459,7 +1459,7 @@ p {
         display: block;
     }
     #hocvienn .boxcenter {
-        flex-direction: column !important;
+        /* flex-direction: column !important; */
     }
     .page {
         padding: 30px 0;
@@ -1949,6 +1949,14 @@ p {
     .social__list-img img {
         width: 48% !important;
         margin-right: 0 !important;
+    }
+
+    .box .db {
+        display: block !important;
+    }
+
+    .box .db2 {
+        padding-left: 0 !important;
     }
 }
 
@@ -2493,4 +2501,8 @@ h2.title {
 .vechungtoi_box {
     display: flex;
     flex-basis: 32%;
+}
+
+.anh__height {
+    height: 460px;
 }
