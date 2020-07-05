@@ -4,7 +4,9 @@ var kichthuoc = document.getElementsByClassName("slide")[0].clientWidth;
 var chuyenSlide = document.getElementsByClassName("chuyen-slide")[0]; // lấy kích thức tất cả ảnh
 var maxlength = document.querySelectorAll(".chuyen-slide__boximg"); //tìm kích thước lớn nhất
 var max = kichthuoc * maxlength.length;
+//1349*3
 max -= kichthuoc;
+// max = max - kichthuoc;
 var chuyen = 0;
 
 function tiep() {
