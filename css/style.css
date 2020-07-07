@@ -968,11 +968,11 @@ p {
     background-image: url(../images/giaovien-bg.png);
     text-align: center;
     min-height: 530px;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
     text-align: center;
-    background-size: cover !important;
+    background-size: cover;
     background-position: center;
 }
 
@@ -1181,6 +1181,14 @@ p {
     padding-bottom: 3rem;
 }
 
+.top2 {
+    margin-top: 1rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 5rem;
+}
+
 .pb-1 {
     padding-bottom: 1rem;
 }
@@ -1242,7 +1250,7 @@ p {
 
 /* tablet  */
 
-@media only screen and (min-width: 740px) and (max-width: 1025px) {
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
     .slide {
         width: 100% !important;
     }
@@ -1459,7 +1467,7 @@ p {
         display: block;
     }
     #hocvienn .boxcenter {
-        /* flex-direction: column !important; */
+        flex-direction: column !important;
     }
     .page {
         padding: 30px 0;
@@ -1497,32 +1505,6 @@ p {
     }
     .box .db2 {
         padding-left: 0px !important;
-    }
-
-    .footer__social {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .social__icon {
-        width: 100% !important;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 20px;    
-    }
-
-    .footer__social .googleplay, .footer__social .appstore {
-        transform: translateY(0) !important;
-        padding-right: 0;
-    }
-
-    .social__list-img {
-        width: 100% !important;
-    }
-
-    .social__list-img img {
-        width: 48% !important;
-        margin-right: 0 !important;
     }
 }
 
@@ -1924,39 +1906,9 @@ p {
     .uudiem__box {
         display: none;
     }
-
-    .footer__social {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .social__icon {
-        width: 100% !important;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 20px;    
-    }
-
-    .footer__social .googleplay, .footer__social .appstore {
-        transform: translateY(0) !important;
-        padding-right: 0;
-    }
-
-    .social__list-img {
-        width: 100% !important;
-    }
-
-    .social__list-img img {
-        width: 48% !important;
-        margin-right: 0 !important;
-    }
-
-    .box .db {
-        display: block !important;
-    }
-
-    .box .db2 {
-        padding-left: 0 !important;
+    /* top2 */
+    .top5 {
+        margin-top: 5rem !important;
     }
 }
 
@@ -2501,8 +2453,4 @@ h2.title {
 .vechungtoi_box {
     display: flex;
     flex-basis: 32%;
-}
-
-.anh__height {
-    height: 460px;
 }

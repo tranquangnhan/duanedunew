@@ -162,7 +162,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
             //end điện thoại
             // start ipad
             if (body.clientWidth > 740 && body.clientWidth < 1024) {
-                boxsd1[i].style.height = "800px";
+                boxsd1[i].style.height = "837px";
                 content.style.minHeight = '1250px';
             }
             //end ipad
