@@ -1935,15 +1935,12 @@ p {
     .pt-0-mb {
         padding-top: 0 !important;
     }
-    
     .box .db {
         display: block !important;
     }
-
     .box .db2 {
         padding-left: 0 !important;
     }
-
     #hocvienn .boxcenter {
         justify-content: unset !important;
     }
@@ -2161,7 +2158,7 @@ h2.title {
 }
 
 .huongdan_page4 .boxcenter {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     flex-direction: column;
 }
 
