@@ -1300,6 +1300,7 @@ p {
         margin: 0 auto;
         display: block;
         padding-top: 30px;
+        margin-top: 3rem;
     }
     #teacher_img-item {
         width: 100% !important;
@@ -1457,6 +1458,9 @@ p {
     }
     .huongdan .page {
         min-height: unset !important;
+    }
+    #hocvien img {
+        flex-basis: 85% !important;
     }
     .review .col-4 {
         width: 100% !important;
