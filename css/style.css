@@ -1693,6 +1693,7 @@ p {
         margin-left: 0;
     }
     .student .text-teacher h2 {
+        margin-top: 1rem;
         width: 100%;
         /* height: 300px; */
         text-align: center;
