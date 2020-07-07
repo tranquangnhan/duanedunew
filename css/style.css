@@ -1935,6 +1935,18 @@ p {
     .pt-0-mb {
         padding-top: 0 !important;
     }
+    
+    .box .db {
+        display: block !important;
+    }
+
+    .box .db2 {
+        padding-left: 0 !important;
+    }
+
+    #hocvienn .boxcenter {
+        justify-content: unset !important;
+    }
 }
 
 
