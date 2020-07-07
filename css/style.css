@@ -33,11 +33,6 @@
     font-style: normal;
 }
 
-
-/* img {
-    max-width: 100%;
-} */
-
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -66,6 +61,7 @@ h2 {
 body {
     margin: 0;
     font-family: Avo, sans-serif;
+    max-width: 100%;
 }
 
 p {
@@ -1759,7 +1755,7 @@ p {
     /* =========box ưu đãi==============  */
     .uudai {
         min-height: 425px;
-        background-size: 138% 100%;
+        background-size: 190% 100%;
     }
     .uudai .uudai__boxbtn {
         width: 55%;
@@ -1902,9 +1898,35 @@ p {
     .uudiem__box {
         display: none;
     }
+    /* social list img*/
+    .footer__social .social__list-img {
+        width: 37%;
+        margin-top: 4rem;
+    }
+    .footer__social .googleplay,
+    .footer__social .appstore {
+        padding-right: 0 !important;
+        width: 91% !important;
+    }
+    .footer__social img {
+        margin-top: 28px !important;
+    }
+    /* end social list img*/
     /* top2 */
     .top5 {
         margin-top: 5rem !important;
+    }
+    .mt-1-mb {
+        margin-top: 1rem !important;
+    }
+    .pt-4-mb {
+        padding-top: 4rem !important;
+    }
+    .pb-3-mb {
+        padding-bottom: 3rem !important;
+    }
+    .pt-0-mb {
+        padding-top: 0 !important;
     }
 }
 
