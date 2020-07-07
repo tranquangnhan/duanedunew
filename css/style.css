@@ -1246,7 +1246,10 @@ p {
 
 /* tablet  */
 
-@media only screen and (min-width: 740px) and (max-width: 1023px) {
+@media only screen and (min-width: 740px) and (max-width: 1025px) {
+    .top5 {
+        margin-top: 6rem !important;
+    }
     .slide {
         width: 100% !important;
     }

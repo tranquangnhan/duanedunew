@@ -166,6 +166,11 @@ for (let i = 0; i < btnxemthem1.length; i++) {
                 content.style.minHeight = '1250px';
             }
             //end ipad
+            //ipadpro
+            if (body.clientWidth > 1023) {
+                boxsd1[i].style.height = "650px";
+                content.style.minHeight = '1150px';
+            }
         } else {
             // laptop
             contenttext1[i].style.minHeight = "156px";
