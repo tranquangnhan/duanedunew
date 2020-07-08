@@ -1548,10 +1548,10 @@ p {
         transform: unset;
     }
     .text-banner .btn-dk {
-        max-width: 130px;
-        height: 40px;
+        min-width: 130px;
+        height: 50px;
         margin: 22px 0;
-        line-height: 40px;
+        line-height: 50px;
     }
     .text-banner .welcome h1 {
         font-size: 15pt;
@@ -1762,7 +1762,7 @@ p {
     /* =========box ưu đãi==============  */
     .uudai {
         min-height: 425px;
-        background-size: 190% 100%;
+        background-size: 300% 100%;
     }
     .uudai .uudai__boxbtn {
         width: 55%;
