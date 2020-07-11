@@ -812,7 +812,7 @@ p {
 }
 
 .btn-dk a {
-    color: black;
+    color: black !important;
 }
 
 .btn-dk:hover {
@@ -1247,6 +1247,9 @@ p {
 /* tablet  */
 
 @media only screen and (min-width: 740px) and (max-width: 1025px) {
+    .pb-3-tl {
+        padding-bottom: 3rem;
+    }
     .top5 {
         margin-top: 6rem !important;
     }
@@ -1508,6 +1511,11 @@ p {
     }
     .box .db2 {
         padding-left: 0px !important;
+    }
+    /* img footer */
+    .footer__social .googleplay,
+    .footer__social .appstore {
+        transform: translateY(30px) !important;
     }
 }
 
@@ -1915,7 +1923,7 @@ p {
         width: 91% !important;
     }
     .footer__social img {
-        margin-top: 28px !important;
+        margin-top: 17px !important;
     }
     /* end social list img*/
     /* top2 */
@@ -1934,6 +1942,9 @@ p {
     .pt-0-mb {
         padding-top: 0 !important;
     }
+    .pb-0-mb {
+        padding-bottom: 0 !important;
+    }
     .box .db {
         display: block !important;
     }
@@ -1942,6 +1953,10 @@ p {
     }
     #hocvienn .boxcenter {
         justify-content: unset !important;
+    }
+    /* footer img */
+    .footer__social .social__icon {
+        margin-top: 1.5rem;
     }
 }
 
@@ -1958,6 +1973,10 @@ p {
     }
     .huongdan_btn>div {
         width: 125px !important;
+    }
+    /* footer img */
+    .footer__social img {
+        width: 50px !important;
     }
 }
 
