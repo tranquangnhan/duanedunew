@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: Avo;
-    src: url("../font/SVN-Avo.ttf") format("truetype");
+    src: url("../font/SVN-Avo2.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -61,7 +61,7 @@ h2 {
 
 body {
     margin: 0;
-    font-family: Avo, sans-serif;
+    font-family: "Avo", sans-serif;
     max-width: 100%;
 }
 
