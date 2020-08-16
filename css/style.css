@@ -193,6 +193,7 @@ p {
 }
 
 .box__welcome2-p {
+    font-family: "Avo" !important;
     text-align: left;
     width: 95%;
 }

@@ -90,99 +90,87 @@ var btnxemthem1 = document.querySelectorAll('.xemthem');
 //lấy content parent bên mobile
 var contentParent = document.querySelectorAll('.content-parent');
 
-for (let i = 0; i < btnxemthem1.length; i++) {
-    btnxemthem1[i].addEventListener("click", slidedown1);
-
-    function slidedown1() {
-        if (
-            boxsd1[i].clientHeight == 350
-        ) {
-            // var thuNho1 = document.querySelectorAll('.thunho');
-            // if(!thuNho1){
-
-            // }
-
-            // màn hình lap top
-            boxsd1[i].style.height = "545px";
-            //sửa thành 535px
-            contenttext1[i].style.minHeight = "100%";
-            content.style.minHeight = '1000px'; //sua lai 1000
-            btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
-            btnxemthem1[i].style.right = '41%';
-            // laptop
-            //start điện thoại
-            if (body.clientWidth < 740) {
-                //với màn hình nhỏ hơn 320 
-                if (body.clientWidth <= 320) {
-                    boxsd1[1].style.height = "605px"; //sua lai thanh 605px
-                    //sửa lỗi màn
-                }
-                boxsd1[i].style.height = "645px";
-                //sửa chữ xem thêm
-                content.style.minHeight = '2050px';
-                btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
-                btnxemthem1[i].style.right = '41%';
-                contentParent[i].style.minHeight = '850px';
-                // click vào thu nhỏ box contentParent thu lại
-                var thuNho2 = document.querySelectorAll('.thunho');
-                for (let i = 0; i < thuNho2.length; i++) {
-                    thuNho2[i].addEventListener('click', setHeightContentParent);
-
-                    function setHeightContentParent() {
-                        if (!thuNho2[i]) {
-                            contentParent[0].style.minHeight = '650px';
-                            contentParent[1].style.minHeight = '650px';
-                            contentParent[2].style.minHeight = '650px';
-                        }
-                        contentParent[0].style.minHeight = '650px';
-                        contentParent[1].style.minHeight = '650px';
-                        contentParent[2].style.minHeight = '650px';
-
-                    }
-
-                }
-                for (let i = 0; i < btnxemthem1.length; i++) {
-                    btnxemthem1[i].addEventListener('click', setHeightContentParent);
-
-                    function setHeightContentParent() {
-                        if (!btnxemthem1[i]) {
-                            contentParent[0].style.minHeight = '650px';
-                            contentParent[1].style.minHeight = '650px';
-                            contentParent[2].style.minHeight = '650px';
-                        }
-                        contentParent[0].style.minHeight = '650px';
-                        contentParent[1].style.minHeight = '650px';
-                        contentParent[2].style.minHeight = '650px';
-
-                    }
-
-                }
-                // click vào thu nhỏ box contentParent thu lại
+function slidedown1(i) {
+    if (boxsd1[i].clientHeight <= 350) {
+        // màn hình lap top
+        boxsd1[i].style.height = "545px";
+        //sửa thành 535px
+        contenttext1[i].style.minHeight = "100%";
+        content.style.minHeight = '1000px'; //sua lai 1000
+        btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
+        btnxemthem1[i].style.right = '41%';
+        // laptop
+        //start điện thoại
+        if (body.clientWidth < 740) {
+            //với màn hình nhỏ hơn 320 
+            if (body.clientWidth <= 320) {
+                boxsd1[1].style.height = "605px"; //sua lai thanh 605px
+                //sửa lỗi màn
             }
-            //end điện thoại
-            // start ipad
-            if (body.clientWidth > 740 && body.clientWidth < 1024) {
-                boxsd1[i].style.height = "837px";
-                content.style.minHeight = '1250px';
-            }
-            //end ipad
-            //ipadpro
-            if (body.clientWidth > 1023) {
-                boxsd1[i].style.height = "650px";
-                content.style.minHeight = '1150px';
-            }
-        } else {
-            // laptop
-            contenttext1[i].style.minHeight = "156px";
-            btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
-            btnxemthem1[i].style.right = '41%';
-            content.style.minHeight = '835px';
-            boxsd1[i].style.height = "350px";
+            boxsd1[i].style.height = "645px";
             //sửa chữ xem thêm
-            btnxemthem1[i].innerHTML = 'Xem Thêm';
-            btnxemthem1[i].style.right = '10px';
-        }
+            content.style.minHeight = '2050px';
+            btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
+            btnxemthem1[i].style.right = '41%';
+            contentParent[i].style.minHeight = '850px';
+            // click vào thu nhỏ box contentParent thu lại
+            var thuNho2 = document.querySelectorAll('.thunho');
+            for (let i = 0; i < thuNho2.length; i++) {
+                thuNho2[i].addEventListener('click', setHeightContentParent);
 
+                function setHeightContentParent() {
+                    if (!thuNho2[i]) {
+                        contentParent[0].style.minHeight = '650px';
+                        contentParent[1].style.minHeight = '650px';
+                        contentParent[2].style.minHeight = '650px';
+                    }
+                    contentParent[0].style.minHeight = '650px';
+                    contentParent[1].style.minHeight = '650px';
+                    contentParent[2].style.minHeight = '650px';
+
+                }
+
+            }
+            for (let i = 0; i < btnxemthem1.length; i++) {
+                btnxemthem1[i].addEventListener('click', setHeightContentParent);
+
+                function setHeightContentParent() {
+                    if (!btnxemthem1[i]) {
+                        contentParent[0].style.minHeight = '650px';
+                        contentParent[1].style.minHeight = '650px';
+                        contentParent[2].style.minHeight = '650px';
+                    }
+                    contentParent[0].style.minHeight = '650px';
+                    contentParent[1].style.minHeight = '650px';
+                    contentParent[2].style.minHeight = '650px';
+
+                }
+
+            }
+            // click vào thu nhỏ box contentParent thu lại
+        }
+        //end điện thoại
+        // start ipad
+        if (body.clientWidth > 740 && body.clientWidth < 1024) {
+            boxsd1[i].style.height = "837px";
+            content.style.minHeight = '1250px';
+        }
+        //end ipad
+        //ipadpro
+        if (body.clientWidth > 1023) {
+            boxsd1[i].style.height = "650px";
+            content.style.minHeight = '1150px';
+        }
+    } else {
+        // laptop
+        contenttext1[i].style.minHeight = "156px";
+        btnxemthem1[i].innerHTML = "<div class='thunho'><i class='fa fa-angle-up'></i></div>";
+        btnxemthem1[i].style.right = '41%';
+        content.style.minHeight = '835px';
+        boxsd1[i].style.height = "350px";
+        //sửa chữ xem thêm
+        btnxemthem1[i].innerHTML = 'Xem Thêm';
+        btnxemthem1[i].style.right = '10px';
     }
 }
 
